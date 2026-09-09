@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RGPV Important Questions</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #172033;
+        }
+
+        header {
+            background: #173b75;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 26px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background: #173b75;
+            color: white;
+            text-decoration: none;
+            border: none;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .btn:hover {
+            background: #285aa0;
+        }
+
+        .back {
+            background: #667085;
+        }
+
+        .question {
+            border-left: 5px solid #173b75;
+        }
+
+        .answer {
+            background: #eef3ff;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 10px;
+            line-height: 1.6;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Most Repeated & Important Questions</h1>
+    <p>RGPV University • 1st & 2nd Semester</p>
+</header>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="card">
+        <h2>📚 Study Smart</h2>
+
+        <p>
+            Most Repeated & Important Questions for
+            RGPV First Year Engineering Students.
+        </p>
+
+        <button class="btn" onclick="showPage('sets')">
+            👉 Start Preparation
+        </button>
+    </section>
+
+
+    <!-- SET PAGE -->
+    <section id="sets" class="card hidden">
+
+        <button class="btn back" onclick="showPage('home')">
+            ← Back
+        </button>
+
+        <h2>📖 Select Semester Set</h2>
+
+        <button class="btn" onclick="showPage('setA')">
+            SET A — 1st Semester
+        </button>
+
+        <button class="btn" onclick="showPage('setB')">
+            SET B — 2nd Semester
+        </button>
+
+    </section>
+
+
+    <!-- SET A -->
+    <section id="setA" class="card hidden">
+
+        <button class="btn back" onclick="showPage('sets')">
+            ← Back
+        </button>
+
+        <h2>SET A — 1st Semester</h2>
+
+        <div id="setAList"></div>
+
+    </section>
+
+
+    <!-- SET B -->
+    <section id="setB" class="card hidden">
+
+        <button class="btn back" onclick="showPage('sets')">
+            ← Back
+        </button>
+
+        <h2>SET B — 2nd Semester</h2>
+
+        <div id="setBList"></div>
+
+    </section>
+
+
+    <!-- QUESTIONS -->
+    <section id="questions" class="card hidden">
+
+        <button class="btn back" onclick="goBackToSet()">
+            ← Back
+        </button>
+
+        <h2 id="subjectTitle"></h2>
+
+        <div id="questionList"></div>
+
+    </section>
+
+</main>
+
+
+<script>
+
+/* =========================
+   SUBJECTS
+========================= */
+
+const subjects = {
+
+    A: [
+        "BT-101 Engineering Chemistry",
+        "BT-102 Mathematics-I",
+        "BT-103 English for Communication",
+        "BT-104 Basic Electrical & Electronics Engineering",
+        "BT-105 Engineering Graphics"
+    ],
+
+    B: [
+        "BT-201 Engineering Physics",
+        "BT-202 Mathematics-II",
+        "BT-203 Basic Mechanical Engineering",
+        "BT-204 Basic Civil Engineering & Mechanics",
+        "BT-205 Basic Computer Engineering"
+    ]
+
+};
+
+
+/* =========================
+   QUESTIONS
+========================= */
+
+const questions = {
+
+"BT-101 Engineering Chemistry": [
+"Hardness of Water & Determination Methods",
+"Ion-Exchange & Zeolite Processes",
+"Lime-Soda Process",
+"Boiler Troubles (Scale, Sludge & Caustic Embrittlement)",
+"Lubricants & Lubrication Mechanisms",
+"Corrosion: Types, Mechanisms & Protection",
+"Spectroscopy Principles & Applications",
+"Polymers & Polymerization Mechanisms",
+"Periodic Trends & Atomic Properties",
+"Phase Rule & Single-Component Systems"
+],
+
+
+"BT-102 Mathematics-I": [
+"Eigen Values and Eigen Vectors",
+"Cayley-Hamilton Theorem and Matrix Inversion",
+"Rank of Matrix and Normal Form Reduction",
+"Consistency of System of Linear Equations",
+"Change of Order of Integration",
+"Rolle's, Lagrange's, and Cauchy's Mean Value Theorems",
+"Taylor's and Maclaurin's Series Expansions",
+"Fourier Series and Half-Range Series",
+"Beta and Gamma Functions",
+"Test for Convergence of Infinite Series"
+],
+
+
+"BT-103 English for Communication": [
+"Principles & 7 Cs of Communication",
+"Barriers to Communication",
+"Communication Process & Cycle",
+"Verbal vs. Non-Verbal Communication",
+"Resume & Covering Letter / Job Application",
+"Technical Reports & Types",
+"Précis Writing",
+"Business Correspondence & Formal Letters/Emails",
+"Technical Definition & Description",
+"Reading Comprehension & Sentence Structure"
+],
+
+
+"BT-104 Basic Electrical & Electronics Engineering": [
+"Superposition Theorem & Network Theorems",
+"Series RLC Circuits & Power Concepts",
+"Single-Phase Transformer & OC/SC Tests",
+"Three-Phase Induction Motor & Torque-Slip Characteristics",
+"DC Machines",
+"Laws of Electromagnetic Induction & Self/Mutual Inductance",
+"Star-Delta Transformation & 3-Phase Connections",
+"Combinational Logic Circuits (Adders)",
+"Sequential Logic Circuits (Flip-Flops)",
+"Semiconductors, Diodes & Transistors (BJT)",
+"De Morgan's Theorems"
+],
+
+
+"BT-105 Engineering Graphics": [
+"Scales & Representative Fraction (R.F.)",
+"Engineering Curves & Special Curves",
+"Projections of Points, Lines & First vs. Third Angle Projection",
+"Projections of Planes",
+"Projections of Solids",
+"Section of Solids & True Shape",
+"Development of Surfaces",
+"Isometric Projection vs. Orthographic Projection",
+"Computer-Aided Drafting (CAD) Fundamentals",
+"Building Information Modeling (BIM) & Architectural Drawings"
+],
+
+
+"BT-201 Engineering Physics": [
+"Wave Mechanics & Schrödinger Equations",
+"Fiber Optics & Wave Propagation",
+"Lasers & Population Inversion",
+"Interference of Light (Newton's Rings & Interferometers)",
+"Semiconductor Physics & Fermi Level",
+"Electromagnetism & Poynting Vector",
+"Quantum Principles & Uncertainty Principle",
+"Diffraction of Light & Resolving Power",
+"Vector Calculus & Field Theorems",
+"Semiconductor Devices & Hall Effect"
+],
+
+
+"BT-202 Mathematics-II": [
+"Method of Variation of Parameters",
+"Vector Integral Theorems (Gauss, Stokes, Green)",
+"Analytic Functions & Cauchy-Riemann Equations",
+"Complex Integration & Cauchy's Integral Theorem/Formula",
+"Poles and Residues",
+"Charpit's Method for Non-Linear Partial Differential Equations (PDEs)",
+"First-Order Ordinary Differential Equations (ODEs)",
+"Special Functions (Bessel's Function)",
+"Vector Calculus (Gradient, Divergence, Curl & Directional Derivatives)",
+"Higher-Order Linear ODEs & Series Solutions"
+],
+
+
+"BT-203 Basic Mechanical Engineering": [
+"Materials Science & Engineering Properties",
+"Stress-Strain Diagram & Tensile Testing",
+"Fluid Mechanics & Bernoulli's Equation",
+"Laws of Thermodynamics",
+"Internal Combustion (I.C.) Engines",
+"Thermodynamic Cycles",
+"Steam Boilers & Generators",
+"Machining & Machine Tools",
+"Measuring Instruments & Metrology",
+"Hydraulic Pumps, Turbines & Compressors"
+],
+
+
+"BT-204 Basic Civil Engineering & Mechanics": [
+"Cement & Concrete Properties",
+"Building Materials & Construction",
+"Surveying Operations & Instruments",
+"Contours & Mapping",
+"Remote Sensing & GPS",
+"Equilibrium & Coplanar Force Systems",
+"Analysis of Trusses",
+"Shear Force & Bending Moment Diagrams (SFD & BMD)",
+"Centroid & Centre of Gravity",
+"Moment of Inertia & Friction"
+],
+
+
+"BT-205 Basic Computer Engineering": [
+"Object-Oriented Programming (OOP) Fundamentals",
+"Inheritance, Overloading & Advanced C++ Concepts",
+"OSI Reference Model vs. TCP/IP Model",
+"Operating System & Computer Architecture",
+"Database Management Systems (DBMS) & Data Independence",
+"Cloud Computing & Infrastructure",
+"Computer Networks & Security Threats",
+"Algorithms & Flowcharts",
+"Data Structures & C++ Basics",
+"E-Commerce & Web Technologies"
+]
+
+};
+
+
+/* =========================
+   SHOW PAGE
+========================= */
+
+function showPage(pageId) {
+
+    const pages = [
+        "home",
+        "sets",
+        "setA",
+        "setB",
+        "questions"
+    ];
+
+    pages.forEach(function(page) {
+        document.getElementById(page).classList.add("hidden");
+    });
+
+    document.getElementById(pageId).classList.remove("hidden");
+}
+
+
+/* =========================
+   CREATE SUBJECT BUTTONS
+========================= */
+
+function createSubjects(setName, elementId) {
+
+    const box = document.getElementById(elementId);
+
+    subjects[setName].forEach(function(subject) {
+
+        const button = document.createElement("button");
+
+        button.className = "btn";
+
+        button.textContent = "📘 " + subject;
+
+        button.onclick = function() {
+            openSubject(subject, setName);
+        };
+
+        box.appendChild(button);
+
+    });
+}
+
+
+/* =========================
+   OPEN SUBJECT
+========================= */
+
+let currentSet = "sets";
+
+function openSubject(subject, setName) {
+
+    currentSet = setName;
+
+    document.getElementById("subjectTitle").textContent = subject;
+
+    const questionBox = document.getElementById("questionList");
+
+    questionBox.innerHTML = "";
+
+    questions[subject].forEach(function(question, index) {
+
+        const card = document.createElement("div");
+
+        card.className = "card question";
+
+        card.innerHTML = `
+
+            <h3>
+                Q${index + 1}. ${question}
+            </h3>
+
+            <button class="btn"
+                onclick="toggleAnswer(this)">
+                👁 Show Answer
+            </button>
+
+            <div class="answer hidden">
+
+                <b>Answer:</b>
+
+                <p>
+                    This question will contain the complete
+                    RGPV exam-oriented answer in easy English.
+                </p>
+
+                <p>
+                    <b>Preparation:</b>
+                    Definition + Main Points + Explanation +
+                    Diagram/Formula/Example wherever required.
+                </p>
+
+            </div>
+
+        `;
+
+        questionBox.appendChild(card);
+
+    });
+
+    showPage("questions");
+}
+
+
+/* =========================
+   SHOW / HIDE ANSWER
+========================= */
+
+function toggleAnswer(button) {
+
+    const answer = button.nextElementSibling;
+
+    answer.classList.toggle("hidden");
+
+    if (answer.classList.contains("hidden")) {
+
+        button.textContent = "👁 Show Answer";
+
+    } else {
+
+        button.textContent = "🙈 Hide Answer";
+
+    }
+
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+function goBackToSet() {
+
+    if (currentSet === "A") {
+
+        showPage("setA");
+
+    } else {
+
+        showPage("setB");
+
+    }
+
+}
+
+
+/* =========================
+   START WEBSITE
+========================= */
+
+createSubjects("A", "setAList");
+
+createSubjects("B", "setBList");
+
+</script>
+
+</body>
+  </html>
