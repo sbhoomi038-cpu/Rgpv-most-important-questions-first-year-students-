@@ -1,521 +1,1909 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="zQuUEun_7lSfXKgnzNdw0OBdzcWFLNqDcnUOfbx1-Hk" />
-    <title>RGPV Important Questions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<title>RGPV Most Important Questions</title>
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #172033;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-        header {
-            background: #173b75;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
+:root{
+    --bg:#07111f;
+    --card:#101d31;
+    --card2:#162640;
+    --text:#ffffff;
+    --muted:#b8c5d9;
+    --accent:#6c8cff;
+    --accent2:#8d6cff;
+    --border:#263a5c;
+    --question:#55c2ff;
+    --answer:#75e6a0;
+}
 
-        header h1 {
-            margin: 0 0 10px;
-            font-size: 26px;
-        }
+body{
+    background:linear-gradient(135deg,#06101d,#0c1930,#10152d);
+    color:var(--text);
+    min-height:100vh;
+    transition:.3s;
+}
 
-        header p {
-            margin: 0;
-        }
+body.light{
+    --bg:#f3f6fb;
+    --card:#ffffff;
+    --card2:#eef3ff;
+    --text:#172033;
+    --muted:#596579;
+    --accent:#405de6;
+    --accent2:#7148d8;
+    --border:#d7deed;
+    --question:#086fa8;
+    --answer:#16834b;
+    background:#f3f6fb;
+}
 
-        main {
-            max-width: 850px;
-            margin: 25px auto;
-            padding: 15px;
-        }
+.hidden{
+    display:none !important;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
+.container{
+    width:min(100%,1100px);
+    margin:auto;
+    padding:18px;
+}
 
-        h2 {
-            margin-top: 0;
-        }
+header{
+    background:rgba(16,29,49,.95);
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:20;
+}
 
-        .btn {
-            display: block;
-            width: 100%;
-            background: #173b75;
-            color: white;
-            text-decoration: none;
-            border: none;
-            padding: 15px;
-            margin: 12px 0;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: left;
-        }
+.light header{
+    background:rgba(255,255,255,.95);
+}
 
-        .btn:hover {
-            background: #285aa0;
-        }
+.header-inner{
+    max-width:1100px;
+    margin:auto;
+    padding:14px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
 
-        .back {
-            background: #667085;
-        }
+.logo{
+    font-size:20px;
+    font-weight:800;
+}
 
-        .question {
-            border-left: 5px solid #173b75;
-        }
+.theme-btn,.back-btn{
+    border:1px solid var(--border);
+    background:var(--card2);
+    color:var(--text);
+    padding:10px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:700;
+}
 
-        .answer {
-            background: #eef3ff;
-            padding: 15px;
-            margin-top: 10px;
-            border-radius: 10px;
-            line-height: 1.6;
-        }
+.hero{
+    text-align:center;
+    padding:38px 10px 28px;
+}
 
-        .hidden {
-            display: none;
-        }
-    </style>
+.hero h1{
+    font-size:clamp(27px,6vw,48px);
+    line-height:1.15;
+    margin-bottom:12px;
+}
+
+.hero h1 span{
+    color:var(--accent);
+}
+
+.hero p{
+    color:var(--muted);
+    font-size:16px;
+    line-height:1.6;
+}
+
+.set-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+    margin:20px 0 35px;
+}
+
+.set-card{
+    border:1px solid var(--border);
+    background:linear-gradient(145deg,var(--card),var(--card2));
+    color:var(--text);
+    border-radius:24px;
+    padding:30px 20px;
+    min-height:230px;
+    cursor:pointer;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+    transition:.2s;
+}
+
+.set-card:hover{
+    transform:translateY(-4px);
+}
+
+.book{
+    font-size:64px;
+    margin-bottom:12px;
+}
+
+.set-card h2{
+    font-size:25px;
+    margin-bottom:8px;
+}
+
+.set-card p{
+    color:var(--muted);
+}
+
+.section-title{
+    text-align:center;
+    margin:20px 0;
+}
+
+.section-title h2{
+    font-size:27px;
+}
+
+.section-title p{
+    color:var(--muted);
+    margin-top:7px;
+}
+
+.subject-list{
+    display:grid;
+    gap:15px;
+}
+
+.subject-card{
+    width:100%;
+    border:1px solid var(--border);
+    background:var(--card);
+    color:var(--text);
+    border-radius:18px;
+    padding:18px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    text-align:left;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.subject-card:hover{
+    transform:translateX(3px);
+    border-color:var(--accent);
+}
+
+.subject-icon{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--card2);
+    border-radius:16px;
+    font-size:32px;
+    flex-shrink:0;
+}
+
+.subject-info{
+    flex:1;
+}
+
+.subject-code{
+    color:var(--accent);
+    font-weight:800;
+    font-size:14px;
+}
+
+.subject-name{
+    font-size:19px;
+    font-weight:800;
+    margin:4px 0;
+}
+
+.subject-count{
+    color:var(--muted);
+    font-size:13px;
+}
+
+.arrow{
+    font-size:32px;
+    color:var(--accent);
+}
+
+.top-actions{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.question-list{
+    display:grid;
+    gap:18px;
+}
+
+.question-box{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.question-number{
+    background:var(--card2);
+    color:var(--accent);
+    padding:10px 15px;
+    font-weight:900;
+    font-size:13px;
+}
+
+.question-text{
+    padding:17px;
+    color:var(--question);
+    font-size:18px;
+    font-weight:800;
+    line-height:1.5;
+}
+
+.hi-q{
+    margin-top:8px;
+    color:var(--muted);
+    font-size:15px;
+    font-weight:600;
+}
+
+.answer-btn{
+    margin:0 17px 17px;
+    border:0;
+    border-radius:11px;
+    padding:11px 16px;
+    background:var(--accent);
+    color:white;
+    font-weight:800;
+    cursor:pointer;
+}
+
+.answer-content{
+    display:none;
+    padding:0 17px 20px;
+    border-top:1px solid var(--border);
+}
+
+.answer-content.show{
+    display:block;
+}
+
+.answer-section{
+    margin-top:18px;
+}
+
+.answer-section h4{
+    color:var(--answer);
+    font-size:17px;
+    margin-bottom:6px;
+}
+
+.answer-section p{
+    color:var(--text);
+    line-height:1.65;
+    font-size:15px;
+}
+
+.diagram-title{
+    margin-top:18px;
+    color:var(--accent);
+    font-weight:800;
+}
+
+.diagram{
+    background:#050b14;
+    color:#d8e6ff;
+    padding:15px;
+    margin-top:8px;
+    border-radius:12px;
+    overflow:auto;
+    line-height:1.4;
+    font-size:12px;
+}
+
+.light .diagram{
+    background:#edf1f8;
+    color:#182238;
+}
+
+.exam-point{
+    margin-top:15px;
+    padding:13px;
+    background:var(--card2);
+    border-left:4px solid var(--accent);
+    border-radius:8px;
+    line-height:1.5;
+    color:var(--text);
+}
+
+footer{
+    text-align:center;
+    color:var(--muted);
+    padding:30px 10px;
+    font-size:13px;
+}
+
+@media(max-width:650px){
+    .set-grid{
+        grid-template-columns:1fr;
+    }
+
+    .set-card{
+        min-height:200px;
+    }
+
+    .hero{
+        padding-top:28px;
+    }
+
+    .subject-card{
+        padding:14px;
+    }
+
+    .subject-name{
+        font-size:17px;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Most Repeated & Important Questions</h1>
-    <p>RGPV University • 1st & 2nd Semester</p>
+    <div class="header-inner">
+        <div class="logo">📚 RGPV Question Bank</div>
+        <button id="themeBtn" class="theme-btn" onclick="toggleTheme()">☀️ Light</button>
+    </div>
 </header>
 
-<main>
+<main class="container">
 
-    <!-- HOME -->
-    <section id="home" class="card">
-        <h2>📚 Study Smart</h2>
+    <!-- HOME PAGE -->
+    <section id="homePage">
 
-        <p>
-            Most Repeated & Important Questions for
-            RGPV First Year Engineering Students.
-        </p>
+        <div class="hero">
+            <h1>Most Repeated & Important Questions<br><span>RGPV University</span></h1>
+            <p>1st & 2nd Semester • Important Questions • Easy English + Hindi • 7-Mark Exam Format</p>
+        </div>
 
-        <button class="btn" onclick="showPage('sets')">
-            👉 Start Preparation
-        </button>
-    </section>
+        <div class="set-grid">
 
+            <button class="set-card" onclick="openSet('A')">
+                <div class="book">📚</div>
+                <h2>SET A</h2>
+                <p>1st Semester</p>
+                <p>5 Subjects • 50 Important Questions</p>
+            </button>
 
-    <!-- SET PAGE -->
-    <section id="sets" class="card hidden">
+            <button class="set-card" onclick="openSet('B')">
+                <div class="book">📖</div>
+                <h2>SET B</h2>
+                <p>2nd Semester</p>
+                <p>5 Subjects • 50 Important Questions</p>
+            </button>
 
-        <button class="btn back" onclick="showPage('home')">
-            ← Back
-        </button>
+        </div>
 
-        <h2>📖 Select Semester Set</h2>
-
-        <button class="btn" onclick="showPage('setA')">
-            SET A — 1st Semester
-        </button>
-
-        <button class="btn" onclick="showPage('setB')">
-            SET B — 2nd Semester
-        </button>
-
-    </section>
-
-
-    <!-- SET A -->
-    <section id="setA" class="card hidden">
-
-        <button class="btn back" onclick="showPage('sets')">
-            ← Back
-        </button>
-
-        <h2>SET A — 1st Semester</h2>
-
-        <div id="setAList"></div>
+        <div class="section-title">
+            <h2>🎯 Exam Focus</h2>
+            <p>Study the most important and repeated topics first.</p>
+        </div>
 
     </section>
 
 
-    <!-- SET B -->
-    <section id="setB" class="card hidden">
+    <!-- SUBJECT PAGE -->
+    <section id="subjectPage" class="hidden">
 
-        <button class="btn back" onclick="showPage('sets')">
-            ← Back
-        </button>
+        <div class="top-actions">
+            <button class="back-btn" onclick="goHome()">← Home</button>
+        </div>
 
-        <h2>SET B — 2nd Semester</h2>
+        <div class="section-title">
+            <h2 id="setTitle"></h2>
+            <p>Select a subject to open its important questions.</p>
+        </div>
 
-        <div id="setBList"></div>
+        <div id="subjectList" class="subject-list"></div>
 
     </section>
 
 
-    <!-- QUESTIONS -->
-    <section id="questions" class="card hidden">
+    <!-- QUESTIONS PAGE -->
+    <section id="questionPage" class="hidden">
 
-        <button class="btn back" onclick="goBackToSet()">
-            ← Back
-        </button>
+        <div class="top-actions">
+            <button class="back-btn" onclick="backToSubjects()">← Subjects</button>
+        </div>
 
-        <h2 id="subjectTitle"></h2>
+        <div class="section-title">
+            <div id="subjectIcon" style="font-size:48px;"></div>
+            <h2 id="questionSubject"></h2>
+            <p>10 Important Questions • Tap Show Answer</p>
+        </div>
 
-        <div id="questionList"></div>
+        <div id="questionList" class="question-list"></div>
 
     </section>
 
 </main>
 
+<footer>
+    © RGPV Important Questions • Student Exam Preparation
+</footer>
 
 <script>
 
-/* =========================
-   SUBJECTS
-========================= */
+const subjects = [];
 
-const subjects = {
-
-    A: [
-        "BT-101 Engineering Chemistry",
-        "BT-102 Mathematics-I",
-        "BT-103 English for Communication",
-        "BT-104 Basic Electrical & Electronics Engineering",
-        "BT-105 Engineering Graphics"
-    ],
-
-    B: [
-        "BT-201 Engineering Physics",
-        "BT-202 Mathematics-II",
-        "BT-203 Basic Mechanical Engineering",
-        "BT-204 Basic Civil Engineering & Mechanics",
-        "BT-205 Basic Computer Engineering"
-    ]
-
-};
-
-
-/* =========================
-   QUESTIONS
-========================= */
-
-const questions = {
-
-"BT-101 Engineering Chemistry": [
-"Hardness of Water & Determination Methods",
-"Ion-Exchange & Zeolite Processes",
-"Lime-Soda Process",
-"Boiler Troubles (Scale, Sludge & Caustic Embrittlement)",
-"Lubricants & Lubrication Mechanisms",
-"Corrosion: Types, Mechanisms & Protection",
-"Spectroscopy Principles & Applications",
-"Polymers & Polymerization Mechanisms",
-"Periodic Trends & Atomic Properties",
-"Phase Rule & Single-Component Systems"
-],
-
-
-"BT-102 Mathematics-I": [
-"Eigen Values and Eigen Vectors",
-"Cayley-Hamilton Theorem and Matrix Inversion",
-"Rank of Matrix and Normal Form Reduction",
-"Consistency of System of Linear Equations",
-"Change of Order of Integration",
-"Rolle's, Lagrange's, and Cauchy's Mean Value Theorems",
-"Taylor's and Maclaurin's Series Expansions",
-"Fourier Series and Half-Range Series",
-"Beta and Gamma Functions",
-"Test for Convergence of Infinite Series"
-],
-
-
-"BT-103 English for Communication": [
-"Principles & 7 Cs of Communication",
-"Barriers to Communication",
-"Communication Process & Cycle",
-"Verbal vs. Non-Verbal Communication",
-"Resume & Covering Letter / Job Application",
-"Technical Reports & Types",
-"Précis Writing",
-"Business Correspondence & Formal Letters/Emails",
-"Technical Definition & Description",
-"Reading Comprehension & Sentence Structure"
-],
-
-
-"BT-104 Basic Electrical & Electronics Engineering": [
-"Superposition Theorem & Network Theorems",
-"Series RLC Circuits & Power Concepts",
-"Single-Phase Transformer & OC/SC Tests",
-"Three-Phase Induction Motor & Torque-Slip Characteristics",
-"DC Machines",
-"Laws of Electromagnetic Induction & Self/Mutual Inductance",
-"Star-Delta Transformation & 3-Phase Connections",
-"Combinational Logic Circuits (Adders)",
-"Sequential Logic Circuits (Flip-Flops)",
-"Semiconductors, Diodes & Transistors (BJT)",
-"De Morgan's Theorems"
-],
-
-
-"BT-105 Engineering Graphics": [
-"Scales & Representative Fraction (R.F.)",
-"Engineering Curves & Special Curves",
-"Projections of Points, Lines & First vs. Third Angle Projection",
-"Projections of Planes",
-"Projections of Solids",
-"Section of Solids & True Shape",
-"Development of Surfaces",
-"Isometric Projection vs. Orthographic Projection",
-"Computer-Aided Drafting (CAD) Fundamentals",
-"Building Information Modeling (BIM) & Architectural Drawings"
-],
-
-
-"BT-201 Engineering Physics": [
-"Wave Mechanics & Schrödinger Equations",
-"Fiber Optics & Wave Propagation",
-"Lasers & Population Inversion",
-"Interference of Light (Newton's Rings & Interferometers)",
-"Semiconductor Physics & Fermi Level",
-"Electromagnetism & Poynting Vector",
-"Quantum Principles & Uncertainty Principle",
-"Diffraction of Light & Resolving Power",
-"Vector Calculus & Field Theorems",
-"Semiconductor Devices & Hall Effect"
-],
-
-
-"BT-202 Mathematics-II": [
-"Method of Variation of Parameters",
-"Vector Integral Theorems (Gauss, Stokes, Green)",
-"Analytic Functions & Cauchy-Riemann Equations",
-"Complex Integration & Cauchy's Integral Theorem/Formula",
-"Poles and Residues",
-"Charpit's Method for Non-Linear Partial Differential Equations (PDEs)",
-"First-Order Ordinary Differential Equations (ODEs)",
-"Special Functions (Bessel's Function)",
-"Vector Calculus (Gradient, Divergence, Curl & Directional Derivatives)",
-"Higher-Order Linear ODEs & Series Solutions"
-],
-
-
-"BT-203 Basic Mechanical Engineering": [
-"Materials Science & Engineering Properties",
-"Stress-Strain Diagram & Tensile Testing",
-"Fluid Mechanics & Bernoulli's Equation",
-"Laws of Thermodynamics",
-"Internal Combustion (I.C.) Engines",
-"Thermodynamic Cycles",
-"Steam Boilers & Generators",
-"Machining & Machine Tools",
-"Measuring Instruments & Metrology",
-"Hydraulic Pumps, Turbines & Compressors"
-],
-
-
-"BT-204 Basic Civil Engineering & Mechanics": [
-"Cement & Concrete Properties",
-"Building Materials & Construction",
-"Surveying Operations & Instruments",
-"Contours & Mapping",
-"Remote Sensing & GPS",
-"Equilibrium & Coplanar Force Systems",
-"Analysis of Trusses",
-"Shear Force & Bending Moment Diagrams (SFD & BMD)",
-"Centroid & Centre of Gravity",
-"Moment of Inertia & Friction"
-],
-
-
-"BT-205 Basic Computer Engineering": [
-"Object-Oriented Programming (OOP) Fundamentals",
-"Inheritance, Overloading & Advanced C++ Concepts",
-"OSI Reference Model vs. TCP/IP Model",
-"Operating System & Computer Architecture",
-"Database Management Systems (DBMS) & Data Independence",
-"Cloud Computing & Infrastructure",
-"Computer Networks & Security Threats",
-"Algorithms & Flowcharts",
-"Data Structures & C++ Basics",
-"E-Commerce & Web Technologies"
-]
-
-};
-
-
-/* =========================
-   SHOW PAGE
-========================= */
-
-function showPage(pageId) {
-
-    const pages = [
-        "home",
-        "sets",
-        "setA",
-        "setB",
-        "questions"
-    ];
-
-    pages.forEach(function(page) {
-        document.getElementById(page).classList.add("hidden");
-    });
-
-    document.getElementById(pageId).classList.remove("hidden");
-}
-
-
-/* =========================
-   CREATE SUBJECT BUTTONS
-========================= */
-
-function createSubjects(setName, elementId) {
-
-    const box = document.getElementById(elementId);
-
-    subjects[setName].forEach(function(subject) {
-
-        const button = document.createElement("button");
-
-        button.className = "btn";
-
-        button.textContent = "📘 " + subject;
-
-        button.onclick = function() {
-            openSubject(subject, setName);
-        };
-
-        box.appendChild(button);
-
+function addSubject(set,code,name,icon,questions){
+    subjects.push({
+        set:set,
+        code:code,
+        name:name,
+        icon:icon,
+        questions:questions
     });
 }
 
+function makeQ(en,hi,sections,diagram,exam){
+    return {
+        q: en + '<div class="hi-q">हिंदी: '+hi+'</div>',
+        sections: sections,
+        diagram: diagram,
+        exam: exam
+    };
+    addSubject("A","BT-101","Engineering Chemistry","🧪",[
 
-/* =========================
-   OPEN SUBJECT
-========================= */
+makeQ(
+"Explain hardness of water and EDTA method for determination of hardness.",
+"जल की कठोरता समझाइए तथा EDTA विधि से कठोरता का निर्धारण समझाइए।",
+[
+{title:"1. Definition",text:"Hardness is the property of water due to dissolved calcium and magnesium salts. Hard water does not form lather easily with soap."},
+{title:"2. Types",text:"Hardness is mainly temporary hardness and permanent hardness. Temporary hardness is due to bicarbonates, while permanent hardness is due to chlorides and sulphates."},
+{title:"3. EDTA Principle",text:"EDTA forms a stable complex with Ca²⁺ and Mg²⁺ ions. The amount of EDTA used gives the hardness of water."},
+{title:"4. Indicator",text:"Eriochrome Black-T (EBT) is commonly used as indicator. The colour changes from wine red to blue at the end point."},
+{title:"5. Procedure",text:"A measured water sample is taken in a conical flask. Buffer solution and EBT indicator are added. The solution is titrated against standard EDTA solution."},
+{title:"6. Calculation",text:"Hardness is calculated from the volume and concentration of EDTA used. It is generally expressed as mg/L or ppm as CaCO₃."},
+{title:"7. Conclusion",text:"EDTA method is accurate, simple and widely used for determining total hardness of water."}
+],
+"Water sample → Buffer + EBT → EDTA titration → Blue end point",
+"Remember: Temporary + permanent hardness = total hardness."
+),
 
-let currentSet = "sets";
+makeQ(
+"Explain ion-exchange process for softening of water.",
+"जल को soft करने के लिए ion-exchange process समझाइए।",
+[
+{title:"1. Introduction",text:"Ion-exchange is a water softening and demineralization process in which unwanted ions are exchanged with H⁺ and OH⁻ ions."},
+{title:"2. Cation Exchange",text:"Cation exchange resin replaces Ca²⁺ and Mg²⁺ ions by H⁺ ions."},
+{title:"3. Anion Exchange",text:"Anion exchange resin replaces chloride, sulphate and other negative ions by OH⁻ ions."},
+{title:"4. Formation of Water",text:"The released H⁺ and OH⁻ ions combine to form H₂O."},
+{title:"5. Regeneration",text:"Cation resin is regenerated using dilute acid, while anion resin is regenerated using an alkali such as NaOH."},
+{title:"6. Advantages",text:"The process produces highly pure water and removes both cations and anions."},
+{title:"7. Conclusion",text:"Ion-exchange is useful where very low mineral content water is required."}
+],
+"Hard water → Cation exchanger → Anion exchanger → Pure water",
+"Important for boiler-feed and laboratory water."
+),
 
-function openSubject(subject, setName) {
+makeQ(
+"Explain zeolite process for softening of water.",
+"जल को soft करने की zeolite process समझाइए।",
+[
+{title:"1. Definition",text:"Zeolite process removes hardness-causing calcium and magnesium ions by exchanging them with sodium ions."},
+{title:"2. Zeolite",text:"Sodium zeolite is a porous material represented approximately as Na₂Z."},
+{title:"3. Working",text:"When hard water passes through the zeolite bed, Ca²⁺ and Mg²⁺ ions are exchanged with Na⁺ ions."},
+{title:"4. Reactions",text:"Ca²⁺ and Mg²⁺ are retained by zeolite and sodium salts remain in the treated water."},
+{title:"5. Regeneration",text:"When zeolite becomes exhausted, concentrated NaCl solution is passed through it to restore sodium form."},
+{title:"6. Advantages",text:"It is simple, compact and produces water with low hardness."},
+{title:"7. Limitation",text:"Turbid, acidic or oily water can damage the process, so pretreatment may be needed."}
+],
+"Hard water → Zeolite bed → Soft water\n\nRegeneration: Exhausted zeolite + NaCl → Regenerated zeolite",
+"Write working + regeneration for good marks."
+),
 
-    currentSet = setName;
+makeQ(
+"Explain lime-soda process for water softening.",
+"जल को soft करने की lime-soda process समझाइए।",
+[
+{title:"1. Introduction",text:"Lime-soda process is a chemical method of removing hardness by adding calculated quantities of lime and soda ash."},
+{title:"2. Lime",text:"Lime, Ca(OH)₂, mainly removes bicarbonate hardness and some magnesium salts."},
+{title:"3. Soda",text:"Soda ash, Na₂CO₃, removes calcium salts such as calcium sulphate by forming insoluble calcium carbonate."},
+{title:"4. Working",text:"Chemicals are mixed with water. Insoluble precipitates are formed and removed by settling and filtration."},
+{title:"5. Main Precipitates",text:"Calcium carbonate and magnesium hydroxide are common precipitates."},
+{title:"6. Advantages",text:"It can treat large quantities of water and is economical for many industrial applications."},
+{title:"7. Conclusion",text:"Correct chemical dosing is important for efficient softening."}
+],
+"Hard water + Lime + Soda → Chemical precipitates → Settling → Filtration → Soft water",
+"Remember CaCO₃ and Mg(OH)₂ precipitates."
+),
 
-    document.getElementById("subjectTitle").textContent = subject;
+makeQ(
+"Explain boiler troubles: scale, sludge, priming and foaming.",
+"Boiler troubles जैसे scale, sludge, priming और foaming समझाइए।",
+[
+{title:"1. Scale",text:"Scale is a hard deposit formed on the inner boiler surface due to dissolved salts. It reduces heat transfer."},
+{title:"2. Sludge",text:"Sludge is a soft and loose deposit that settles at comparatively cooler parts of the boiler."},
+{title:"3. Priming",text:"Priming is the carrying of water droplets along with steam. It produces wet steam."},
+{title:"4. Foaming",text:"Foaming is the formation of stable bubbles on the boiler water surface, often due to oils or high alkalinity."},
+{title:"5. Effects",text:"These troubles reduce efficiency, increase fuel consumption and may damage boiler operation."},
+{title:"6. Prevention",text:"Use treated water, regular blow-down, proper cleaning and control of boiler-water concentration."},
+{title:"7. Conclusion",text:"Proper water treatment and maintenance prevent major boiler troubles."}
+],
+"Boiler water → Scale / Sludge\nSteam outlet → Priming / Foaming",
+"Very important: define all four troubles with prevention."
+),
 
-    const questionBox = document.getElementById("questionList");
+makeQ(
+"What are lubricants? Explain their functions and properties.",
+"Lubricants क्या हैं? उनके functions और properties समझाइए।",
+[
+{title:"1. Definition",text:"A lubricant is a substance placed between moving surfaces to reduce friction and wear."},
+{title:"2. Friction Reduction",text:"It forms a thin film between surfaces and reduces direct metal-to-metal contact."},
+{title:"3. Cooling",text:"Lubricant carries away some heat produced by friction."},
+{title:"4. Cleaning and Protection",text:"It can carry impurities away and protect surfaces from corrosion."},
+{title:"5. Important Properties",text:"Good viscosity, high flash point, suitable pour point, chemical stability and good oiliness are desirable."},
+{title:"6. Types",text:"Lubricants may be liquid oils, semi-solid greases or solid lubricants."},
+{title:"7. Conclusion",text:"A suitable lubricant increases machine life and improves efficiency."}
+],
+"Moving surface → Lubricant film ← Moving surface",
+"Lubricant = less friction + less wear + cooling + protection."
+),
 
-    questionBox.innerHTML = "";
+makeQ(
+"Explain corrosion, its types and methods of prevention.",
+"Corrosion, उसके types और prevention methods समझाइए।",
+[
+{title:"1. Definition",text:"Corrosion is the gradual destruction of a metal due to chemical or electrochemical reaction with its environment."},
+{title:"2. Dry Corrosion",text:"Dry corrosion occurs mainly by direct chemical reaction between metal and gases, generally at higher temperature."},
+{title:"3. Wet Corrosion",text:"Wet or electrochemical corrosion occurs in the presence of moisture or an electrolyte."},
+{title:"4. Causes",text:"Moisture, oxygen, salts, acids and unsuitable environmental conditions can increase corrosion."},
+{title:"5. Prevention by Coating",text:"Painting, galvanizing, tinning and electroplating isolate the metal from the environment."},
+{title:"6. Other Methods",text:"Alloying, cathodic protection and use of corrosion inhibitors can reduce corrosion."},
+{title:"7. Conclusion",text:"Corrosion prevention saves material, money and machine life."}
+],
+"Metal + Environment → Corrosion\n\nPrevention → Coating / Alloying / Cathodic protection",
+"Write definition + types + at least four prevention methods."
+),
 
-    questions[subject].forEach(function(question, index) {
+makeQ(
+"Explain electrochemical corrosion mechanism.",
+"Electrochemical corrosion का mechanism समझाइए।",
+[
+{title:"1. Introduction",text:"Electrochemical corrosion occurs when anodic and cathodic areas are formed on a metal surface in the presence of an electrolyte."},
+{title:"2. Anodic Reaction",text:"At the anode, metal atoms lose electrons and enter solution as metal ions: M → Mⁿ⁺ + ne⁻."},
+{title:"3. Cathodic Reaction",text:"Electrons move to the cathodic region where reduction takes place."},
+{title:"4. Electron Flow",text:"Electrons travel through the metal from anode to cathode."},
+{title:"5. Electrolyte",text:"Ions move through the moist electrolyte and complete the electrochemical circuit."},
+{title:"6. Rust Formation",text:"For iron in moist air, iron ions and hydroxide ions ultimately form hydrated iron oxides called rust."},
+{title:"7. Conclusion",text:"Corrosion occurs because anodic metal dissolution and cathodic reduction happen together."}
+],
+"ANODE → e⁻ through metal → CATHODE\n  ↓                         ↓\nMetal ions              Reduction\n       ← electrolyte ions ←",
+"Anode is the place where corrosion occurs."
+),
 
-        const card = document.createElement("div");
+makeQ(
+"Explain calorific value of fuel and its types.",
+"Fuel के calorific value और उसके types समझाइए।",
+[
+{title:"1. Definition",text:"Calorific value is the amount of heat released when a unit quantity of fuel is completely burnt."},
+{title:"2. Unit",text:"For solid and liquid fuels it is commonly expressed in kJ/kg, while gaseous fuels may be expressed in kJ/m³."},
+{title:"3. Higher Calorific Value",text:"Higher or gross calorific value includes the heat recovered when water vapour formed during combustion is condensed."},
+{title:"4. Lower Calorific Value",text:"Lower or net calorific value does not include the latent heat of condensation of water vapour."},
+{title:"5. Importance",text:"Calorific value helps compare fuels and select a suitable fuel for an application."},
+{title:"6. Factors",text:"Composition, moisture and hydrogen content affect calorific value."},
+{title:"7. Conclusion",text:"A fuel with suitable high calorific value can provide more useful heat per unit fuel."}
+],
+"Fuel + O₂ → Combustion → Heat energy",
+"Remember: HCV > LCV."
+),
 
-        card.className = "card question";
+makeQ(
+"Explain proximate and ultimate analysis of coal.",
+"Coal की proximate और ultimate analysis समझाइए।",
+[
+{title:"1. Proximate Analysis",text:"Proximate analysis determines moisture, volatile matter, ash and fixed carbon of coal."},
+{title:"2. Moisture",text:"Moisture is determined by heating a coal sample under controlled conditions and measuring weight loss."},
+{title:"3. Volatile Matter",text:"It indicates combustible gases released when coal is heated without air."},
+{title:"4. Ash",text:"Ash is the non-combustible residue left after complete burning."},
+{title:"5. Fixed Carbon",text:"Fixed carbon is generally obtained by difference after accounting for moisture, volatile matter and ash."},
+{title:"6. Ultimate Analysis",text:"Ultimate analysis gives elemental composition such as carbon, hydrogen, nitrogen, sulphur and oxygen."},
+{title:"7. Importance",text:"Both analyses help determine coal quality, combustion behaviour and suitability for industrial use."}
+],
+"Coal → Proximate: Moisture + Volatile matter + Ash + Fixed carbon\nCoal → Ultimate: C + H + N + S + O",
+"Write the four constituents of proximate analysis clearly."
+)
 
-        card.innerHTML = `
+]);
+}
+    addSubject("A","BT-102","Mathematics-I","📐",[
+makeQ("Find eigenvalues and eigenvectors of a square matrix.","Square matrix के eigenvalues और eigenvectors ज्ञात कीजिए.",
+[
+{title:"1. Definition",text:"An eigenvalue λ of a square matrix A exists when Av = λv for a non-zero vector v."},
+{title:"2. Characteristic Equation",text:"Eigenvalues are obtained from |A − λI| = 0."},
+{title:"3. Step 1",text:"Write matrix A and form A − λI."},
+{title:"4. Step 2",text:"Calculate the determinant |A − λI| and equate it to zero."},
+{title:"5. Step 3",text:"Solve the resulting characteristic equation to obtain λ values."},
+{title:"6. Eigenvector",text:"For each eigenvalue, solve (A − λI)X = 0 to obtain the corresponding non-zero eigenvector."},
+{title:"7. Result",text:"The obtained λ values are eigenvalues and their corresponding vectors are eigenvectors."}
+],"A − λI → |A − λI| = 0 → Eigenvalues\n(A − λI)X = 0 → Eigenvectors","For numerical questions show determinant and every calculation step."),
 
-            <h3>
-                Q${index + 1}. ${question}
-            </h3>
+makeQ("Explain Cayley-Hamilton theorem and its use for finding inverse of a matrix.","Cayley-Hamilton theorem और matrix inverse में इसका use समझाइए.",
+[
+{title:"1. Theorem",text:"Every square matrix satisfies its own characteristic equation."},
+{title:"2. Characteristic Equation",text:"If the characteristic equation is λⁿ + a₁λⁿ⁻¹ + ... + aₙ = 0, replace λ by matrix A."},
+{title:"3. Matrix Equation",text:"This gives Aⁿ + a₁Aⁿ⁻¹ + ... + aₙI = 0."},
+{title:"4. Rearrangement",text:"Rearrange the equation so that the term involving A⁻¹ can be obtained."},
+{title:"5. Multiplication",text:"For a non-singular matrix, multiply the suitable equation by A⁻¹."},
+{title:"6. Inverse",text:"This produces an expression for A⁻¹ in terms of powers of A and the identity matrix."},
+{title:"7. Importance",text:"The theorem is useful for finding matrix powers and inverse without direct adjoint calculation."}
+],"Characteristic equation → Replace λ by A → Matrix equation → A⁻¹","Very important theorem for matrix numericals."),
 
-            <button class="btn"
-                onclick="toggleAnswer(this)">
-                👁 Show Answer
-            </button>
+makeQ("Explain rank of a matrix and normal form.","Matrix का rank और normal form समझाइए.",
+[
+{title:"1. Rank",text:"Rank of a matrix is the maximum number of linearly independent rows or columns."},
+{title:"2. Row Reduction",text:"Rank can be found by converting a matrix into echelon form using elementary row operations."},
+{title:"3. Non-zero Rows",text:"In echelon form, the number of non-zero rows gives the rank."},
+{title:"4. Normal Form",text:"By elementary row and column operations, a matrix can be reduced to a form containing an identity block and zeros."},
+{title:"5. Rank from Normal Form",text:"The order of the identity block gives the rank."},
+{title:"6. Use",text:"Rank is used in solving linear equations and checking independence."},
+{title:"7. Conclusion",text:"Rank gives important information about the structure of a matrix."}
+],"A → Echelon form → Non-zero rows → Rank","Remember: elementary operations do not change rank."),
 
-            <div class="answer hidden">
+makeQ("Explain consistency of simultaneous linear equations using matrix method.","Matrix method से simultaneous equations की consistency समझाइए.",
+[
+{title:"1. Equations",text:"A system of linear equations can be written as AX = B."},
+{title:"2. Coefficient Matrix",text:"A contains coefficients, X contains unknowns and B contains constants."},
+{title:"3. Augmented Matrix",text:"The augmented matrix is [A|B]."},
+{title:"4. Consistent System",text:"The system is consistent when at least one solution exists."},
+{title:"5. Rank Condition",text:"For n unknowns, consistency requires rank(A) = rank([A|B])."},
+{title:"6. Number of Solutions",text:"If this common rank equals n, the solution is unique. If it is less than n, infinitely many solutions exist."},
+{title:"7. Conclusion",text:"Rank comparison provides a systematic matrix method for checking consistency."}
+],"AX = B\n[A|B] → Row reduction → Compare ranks","Write the rank conditions clearly."),
 
-                <b>Answer:</b>
+makeQ("Explain Rolle's theorem and Lagrange's Mean Value Theorem.","Rolle's theorem और Lagrange Mean Value Theorem समझाइए.",
+[
+{title:"1. Rolle's Theorem",text:"If f is continuous on [a,b], differentiable on (a,b), and f(a)=f(b), then there exists c in (a,b) such that f'(c)=0."},
+{title:"2. Conditions",text:"Continuity on the closed interval, differentiability inside the interval and equal endpoint values are required."},
+{title:"3. Meaning",text:"At some point between a and b, the tangent is parallel to the x-axis."},
+{title:"4. Lagrange MVT",text:"If f is continuous on [a,b] and differentiable on (a,b), then f'(c) = [f(b)-f(a)]/(b-a)."},
+{title:"5. Geometrical Meaning",text:"The tangent slope at c equals the slope of the secant joining the endpoints."},
+{title:"6. Relation",text:"Rolle's theorem is a special case of Lagrange MVT when f(a)=f(b)."},
+{title:"7. Applications",text:"These theorems are used in approximation, inequalities and analysis of functions."}
+],"Rolle: f(a)=f(b) → f'(c)=0\nLagrange: f'(c)=[f(b)-f(a)]/(b-a)","State conditions before applying any theorem."),
 
-                <p>
-                    This question will contain the complete
-                    RGPV exam-oriented answer in easy English.
-                </p>
+makeQ("Explain Taylor's and Maclaurin's series.","Taylor और Maclaurin series समझाइए.",
+[
+{title:"1. Taylor Series",text:"Taylor series represents a function around a point x=a using its derivatives at a."},
+{title:"2. Formula",text:"f(x)=f(a)+f'(a)(x-a)+f''(a)(x-a)²/2!+..."},
+{title:"3. Maclaurin Series",text:"Maclaurin series is Taylor series about a=0."},
+{title:"4. Formula",text:"f(x)=f(0)+xf'(0)+x²f''(0)/2!+..."},
+{title:"5. Procedure",text:"Find derivatives, put the expansion point, substitute derivative values and arrange powers of x-a."},
+{title:"6. Uses",text:"They are used for approximation and expansion of functions."},
+{title:"7. Conclusion",text:"Taylor and Maclaurin series convert suitable functions into power series."}
+],"Taylor about a:\nf(x)=Σ f⁽ⁿ⁾(a)(x-a)ⁿ/n!\n\nMaclaurin: a=0","Memorize both general formulas."),
 
-                <p>
-                    <b>Preparation:</b>
-                    Definition + Main Points + Explanation +
-                    Diagram/Formula/Example wherever required.
-                </p>
+makeQ("Explain Fourier series.","Fourier series समझाइए.",
+[
+{title:"1. Definition",text:"Fourier series represents a suitable periodic function as a sum of sine and cosine terms."},
+{title:"2. General Form",text:"f(x)=a₀/2 + Σ[aₙ cos(nx)+bₙ sin(nx)]."},
+{title:"3. Coefficient a₀",text:"For the standard interval, a₀ is obtained by integrating the function over the required period."},
+{title:"4. Coefficient aₙ",text:"aₙ is found by multiplying f(x) by cos(nx) and integrating over the interval."},
+{title:"5. Coefficient bₙ",text:"bₙ is found by multiplying f(x) by sin(nx) and integrating over the interval."},
+{title:"6. Symmetry",text:"For even functions, sine terms vanish; for odd functions, cosine and constant terms vanish under the standard conditions."},
+{title:"7. Applications",text:"Fourier series is used in heat, vibration, electrical and signal problems."}
+],"Periodic function → Sine terms + Cosine terms → Fourier series","Write the general formula and coefficients."),
+
+makeQ("Explain Beta and Gamma functions and their relation.","Beta और Gamma functions तथा उनका relation समझाइए.",
+[
+{title:"1. Gamma Function",text:"Gamma function is defined by Γ(n)=∫₀∞ xⁿ⁻¹e⁻ˣ dx for suitable n."},
+{title:"2. Important Result",text:"For positive integer n, Γ(n)=(n−1)!."},
+{title:"3. Beta Function",text:"Beta function is B(m,n)=∫₀¹ xᵐ⁻¹(1−x)ⁿ⁻¹ dx."},
+{title:"4. Relation",text:"The important relation is B(m,n)=Γ(m)Γ(n)/Γ(m+n)."},
+{title:"5. Symmetry",text:"Beta function satisfies B(m,n)=B(n,m)."},
+{title:"6. Uses",text:"These functions are useful in integration, probability and mathematical analysis."},
+{title:"7. Conclusion",text:"Beta and Gamma functions simplify many difficult definite integrals."}
+],"B(m,n)=Γ(m)Γ(n)/Γ(m+n)","The Beta-Gamma relation is a must-learn formula."),
+
+makeQ("Explain convergence of a series and important convergence tests.","Series की convergence और important convergence tests समझाइए.",
+[
+{title:"1. Convergence",text:"An infinite series converges if the sequence of its partial sums approaches a finite limit."},
+{title:"2. Divergence",text:"If the partial sums do not approach a finite limit, the series diverges."},
+{title:"3. Comparison Test",text:"Compare a positive-term series with a known convergent or divergent series."},
+{title:"4. Ratio Test",text:"For suitable positive terms, examine the limit of |aₙ₊₁/aₙ|."},
+{title:"5. Root Test",text:"Examine the limit of the nth root of |aₙ|."},
+{title:"6. Integral Test",text:"For suitable positive decreasing functions, convergence of the series can be related to convergence of an improper integral."},
+{title:"7. Conclusion",text:"Choose the test according to the form of the given series."}
+],"Series → Partial sums → Finite limit = Convergent","State the condition and conclusion of the selected test."),
+
+makeQ("Explain change of order of integration in double integration.","Double integration में change of order समझाइए.",
+[
+{title:"1. Meaning",text:"Changing the order means rewriting a double integral by interchanging dx dy with dy dx while keeping the same region."},
+{title:"2. Region",text:"First identify and sketch the region of integration."},
+{title:"3. Original Limits",text:"Understand which variable is inner and which is outer in the given integral."},
+{title:"4. New Limits",text:"Using the region diagram, determine the new lower and upper limits."},
+{title:"5. Integral",text:"Write the new integral in the reversed order."},
+{title:"6. Evaluation",text:"Evaluate the new integral if required."},
+{title:"7. Importance",text:"Changing order can make a difficult integration easier."}
+],"Draw region → Identify limits → Reverse order → Write new integral → Evaluate","Always draw the region for difficult limits.")
+]);
+
+
+addSubject("A","BT-103","English for Communication","🗣️",[
+makeQ("Explain the 7 Cs of effective communication.","Effective communication के 7 Cs समझाइए.",
+[
+{title:"1. Clear",text:"The message should have a clear purpose and simple meaning."},
+{title:"2. Concise",text:"Use necessary words only and avoid unnecessary repetition."},
+{title:"3. Concrete",text:"The message should contain specific and definite information."},
+{title:"4. Correct",text:"Grammar, facts, spelling and information should be correct."},
+{title:"5. Coherent",text:"Ideas should be logically connected and arranged."},
+{title:"6. Complete",text:"The receiver should get all information needed to understand or act."},
+{title:"7. Courteous",text:"Communication should be polite, respectful and positive."}
+],"Clear + Concise + Concrete + Correct + Coherent + Complete + Courteous","Write all 7 Cs with one-line explanation."),
+
+makeQ("Explain the communication process with its elements.","Communication process और उसके elements समझाइए.",
+[
+{title:"1. Sender",text:"The sender is the person who starts the communication."},
+{title:"2. Encoding",text:"The sender converts an idea into words, symbols or gestures."},
+{title:"3. Message",text:"The message is the information or idea being communicated."},
+{title:"4. Channel",text:"The channel is the medium through which the message travels."},
+{title:"5. Receiver and Decoding",text:"The receiver gets the message and interprets its meaning."},
+{title:"6. Feedback",text:"Feedback is the receiver's response to the message."},
+{title:"7. Noise",text:"Noise is anything that disturbs or changes the message."}
+],"Sender → Encoding → Message → Channel → Receiver → Decoding → Feedback\n                         ↑\n                        Noise","Draw the communication cycle."),
+
+makeQ("Differentiate between verbal and non-verbal communication.","Verbal और non-verbal communication में difference समझाइए.",
+[
+{title:"1. Verbal",text:"Verbal communication uses words. It can be spoken or written."},
+{title:"2. Non-verbal",text:"Non-verbal communication uses facial expressions, gestures, posture, eye contact and body language."},
+{title:"3. Medium",text:"Verbal uses language, while non-verbal mainly uses physical or visual signals."},
+{title:"4. Example",text:"A speech is verbal. A smile or hand gesture is non-verbal."},
+{title:"5. Importance",text:"Both forms help the receiver understand the complete meaning."},
+{title:"6. Difference",text:"Verbal meaning is expressed through words; non-verbal meaning is expressed without depending mainly on words."},
+{title:"7. Conclusion",text:"Effective communication usually combines suitable verbal and non-verbal signals."}
+],"VERBAL → Words\nNON-VERBAL → Gesture / Face / Posture / Eye contact","Use examples in the answer."),
+
+makeQ("Explain barriers to effective communication.","Effective communication की barriers समझाइए.",
+[
+{title:"1. Physical Barriers",text:"Noise, distance, poor equipment and unsuitable surroundings can disturb communication."},
+{title:"2. Language Barriers",text:"Difficult words, different languages and poor vocabulary may create misunderstanding."},
+{title:"3. Psychological Barriers",text:"Stress, fear, anger and lack of confidence can affect understanding."},
+{title:"4. Cultural Barriers",text:"Different cultural values and communication styles may cause confusion."},
+{title:"5. Semantic Barriers",text:"A word or sentence may have different meanings for different people."},
+{title:"6. Organizational Barriers",text:"Long communication channels and unclear authority can delay information."},
+{title:"7. Removal",text:"Use simple language, active listening, feedback and suitable communication channels."}
+],"Sender → Barrier → Message → Receiver","Write types + causes + remedies."),
+
+makeQ("What is a resume? Explain its important components.","Resume क्या है? इसके important components समझाइए.",
+[
+{title:"1. Definition",text:"A resume is a short document that presents a person's education, skills, experience and achievements for employment."},
+{title:"2. Personal Details",text:"It generally includes name and appropriate contact details."},
+{title:"3. Career Objective",text:"A short statement explains the candidate's career goal and suitability."},
+{title:"4. Education",text:"List relevant educational qualifications in a clear order."},
+{title:"5. Skills",text:"Mention technical, communication and other relevant skills."},
+{title:"6. Experience and Achievements",text:"Include internships, projects, work experience and relevant achievements when available."},
+{title:"7. Conclusion",text:"A good resume is clear, truthful, organized and relevant to the job."}
+],"Resume → Objective → Education → Skills → Experience → Achievements","Keep resume clear, short and error-free."),
+
+makeQ("Explain technical report writing.","Technical report writing समझाइए.",
+[
+{title:"1. Meaning",text:"A technical report is a structured document that presents technical information, investigation, results or recommendations."},
+{title:"2. Title",text:"The title should clearly show the subject of the report."},
+{title:"3. Introduction",text:"It explains the purpose, background and scope."},
+{title:"4. Method and Data",text:"Describe the procedure, materials, observations or data used."},
+{title:"5. Results and Discussion",text:"Present results clearly and explain their meaning."},
+{title:"6. Conclusion and Recommendation",text:"State the main findings and suitable recommendations if required."},
+{title:"7. Presentation",text:"Use headings, tables, diagrams and simple formal language."}
+],"Title → Introduction → Method → Data → Results → Discussion → Conclusion","Use formal, objective language."),
+
+makeQ("What is précis writing? Explain its rules.","Précis writing क्या है? इसके rules समझाइए.",
+[
+{title:"1. Definition",text:"A précis is a short and clear summary of a longer passage containing its main ideas."},
+{title:"2. Read Carefully",text:"Read the passage more than once to understand the central idea."},
+{title:"3. Main Points",text:"Identify only the important ideas and remove examples and repetition."},
+{title:"4. Own Words",text:"Write the summary mainly in your own words."},
+{title:"5. Brevity",text:"Avoid unnecessary details while keeping the original meaning."},
+{title:"6. Title",text:"Give a suitable short title when required."},
+{title:"7. Accuracy",text:"Do not add personal opinions or change the original meaning."}
+],"Long Passage → Main Ideas → Remove Details → Own Words → Short Précis","Keep meaning unchanged."),
+
+makeQ("Explain group discussion and its important skills.","Group discussion और important skills समझाइए.",
+[
+{title:"1. Meaning",text:"Group discussion is a structured discussion in which a group shares ideas about a topic."},
+{title:"2. Communication",text:"Speak clearly and express ideas in a logical way."},
+{title:"3. Listening",text:"Listen carefully to other participants and respond to their points."},
+{title:"4. Team Behaviour",text:"Respect others and avoid unnecessary arguments."},
+{title:"5. Leadership",text:"A good participant may guide the discussion without dominating it."},
+{title:"6. Knowledge",text:"Relevant knowledge and examples help support your ideas."},
+{title:"7. Conclusion",text:"Successful GD requires communication, listening, confidence, cooperation and logical thinking."}
+],"Topic → Participants → Ideas → Discussion → Agreement / Conclusion","Do not interrupt unnecessarily."),
+
+makeQ("Explain presentation skills and qualities of a good presentation.","Presentation skills और good presentation की qualities समझाइए.",
+[
+{title:"1. Preparation",text:"Know the topic, audience and purpose before presenting."},
+{title:"2. Structure",text:"Use a clear introduction, body and conclusion."},
+{title:"3. Speaking",text:"Speak clearly at a suitable speed and volume."},
+{title:"4. Body Language",text:"Maintain suitable posture, eye contact and natural gestures."},
+{title:"5. Visual Aids",text:"Use simple slides, charts or diagrams that support the message."},
+{title:"6. Confidence",text:"Practice improves confidence and reduces hesitation."},
+{title:"7. Conclusion",text:"A good presentation is clear, organized, engaging and audience-focused."}
+],"Introduction → Main Content → Visual Aid → Conclusion","Practice before the presentation."),
+
+makeQ("Explain one-way and two-way communication.","One-way और two-way communication समझाइए.",
+[
+{title:"1. One-way",text:"In one-way communication, information mainly moves from sender to receiver without immediate feedback."},
+{title:"2. Examples",text:"Announcements, notices and some lectures can be one-way communication."},
+{title:"3. Two-way",text:"In two-way communication, both sides exchange messages and feedback."},
+{title:"4. Examples",text:"Conversation, interview and discussion are common examples."},
+{title:"5. Feedback",text:"Feedback is the main feature that makes two-way communication interactive."},
+{title:"6. Difference",text:"One-way is faster for giving information, while two-way is better for clarification and participation."},
+{title:"7. Conclusion",text:"The suitable type depends on the purpose and situation."}
+],"ONE-WAY: Sender → Receiver\nTWO-WAY: Sender ↔ Receiver","Mention feedback as the key difference.")
+]);
+    addSubject("A","BT-104","BEEE","⚡",[
+makeQ("State and explain Kirchhoff's Current Law and Voltage Law.","Kirchhoff के Current Law और Voltage Law समझाइए.",
+[
+{title:"1. KCL",text:"Kirchhoff's Current Law states that the algebraic sum of currents at a junction is zero."},
+{title:"2. Current Meaning",text:"Current entering a junction is equal to current leaving the junction."},
+{title:"3. Formula",text:"ΣI = 0, or total incoming current = total outgoing current."},
+{title:"4. KVL",text:"Kirchhoff's Voltage Law states that the algebraic sum of all voltages around a closed loop is zero."},
+{title:"5. Formula",text:"ΣV = 0."},
+{title:"6. Use",text:"KCL is mainly used at nodes and KVL around closed loops."},
+{title:"7. Conclusion",text:"Both laws are basic tools for solving electrical circuits."}
+],"KCL: I₁+I₂ = I₃+I₄\nKVL: ΣV = 0 around closed loop","Draw one node and one closed loop."),
+
+makeQ("Explain Superposition Theorem.","Superposition theorem समझाइए.",
+[
+{title:"1. Statement",text:"In a linear circuit with multiple independent sources, the response is the algebraic sum of responses produced by each source acting alone."},
+{title:"2. Linear Circuit",text:"The theorem applies to linear networks."},
+{title:"3. One Source",text:"Keep one independent source active at a time."},
+{title:"4. Other Voltage Sources",text:"An ideal independent voltage source is replaced by a short circuit when deactivated."},
+{title:"5. Other Current Sources",text:"An ideal independent current source is replaced by an open circuit when deactivated."},
+{title:"6. Add Responses",text:"Calculate the required current or voltage for each source and add the signed results."},
+{title:"7. Conclusion",text:"It simplifies analysis of circuits having several independent sources."}
+],"Source 1 → Response 1\nSource 2 → Response 2\nTotal response = Response 1 + Response 2","Remember voltage source→short, current source→open."),
+
+makeQ("Explain Thevenin's theorem.","Thevenin theorem समझाइए.",
+[
+{title:"1. Statement",text:"A linear two-terminal network can be replaced by an equivalent voltage source Vth in series with resistance Rth."},
+{title:"2. Remove Load",text:"Remove the load resistor from the terminals."},
+{title:"3. Vth",text:"Find the open-circuit voltage across the terminals. This is Vth."},
+{title:"4. Rth",text:"Find equivalent resistance seen from the terminals with independent sources deactivated."},
+{title:"5. Equivalent Circuit",text:"Connect Vth in series with Rth."},
+{title:"6. Load Current",text:"For load RL, current can be found using I=Vth/(Rth+RL)."},
+{title:"7. Use",text:"It is useful for repeated load calculations."}
+],"Original network → Vth + Rth → RL","Draw the Thevenin equivalent circuit."),
+
+makeQ("Explain Norton's theorem.","Norton theorem समझाइए.",
+[
+{title:"1. Statement",text:"A linear two-terminal network can be replaced by an equivalent current source IN in parallel with resistance RN."},
+{title:"2. Norton Current",text:"IN is the short-circuit current at the output terminals."},
+{title:"3. Norton Resistance",text:"RN is the equivalent resistance seen from the terminals after deactivating independent sources."},
+{title:"4. Equivalent",text:"The network is represented by a current source in parallel with RN."},
+{title:"5. Load",text:"The load is connected across the parallel equivalent circuit."},
+{title:"6. Relation",text:"For a linear network, RN = Rth and Vth = IN RN."},
+{title:"7. Conclusion",text:"Norton's theorem is useful for simplifying two-terminal networks."}
+],"Original network → IN || RN → Load","Remember Norton = current source in parallel."),
+
+makeQ("Explain AC circuit and RMS value.","AC circuit और RMS value समझाइए.",
+[
+{title:"1. AC",text:"Alternating current changes its magnitude and direction periodically."},
+{title:"2. Sinusoidal Form",text:"A common AC voltage is v=Vm sin(ωt)."},
+{title:"3. Peak Value",text:"Vm is the maximum or peak value of the sinusoidal quantity."},
+{title:"4. RMS Meaning",text:"RMS value is the equivalent DC value that produces the same heating effect in a resistor."},
+{title:"5. RMS Formula",text:"For a sine wave, Vrms = Vm/√2 and Irms = Im/√2."},
+{title:"6. Frequency",text:"Frequency is the number of cycles per second and is measured in hertz."},
+{title:"7. Conclusion",text:"RMS values are commonly used for practical AC voltage and current ratings."}
+],"AC waveform: ~~~~~~~~\nVrms = Vm/√2","For sine wave remember 0.707 × peak."),
+
+makeQ("Explain power factor in an AC circuit.","AC circuit में power factor समझाइए.",
+[
+{title:"1. Definition",text:"Power factor is the cosine of the phase angle between voltage and current in an AC circuit."},
+{title:"2. Formula",text:"Power factor = cos φ."},
+{title:"3. Unity PF",text:"For a purely resistive circuit, voltage and current are in phase and power factor is 1."},
+{title:"4. Lagging PF",text:"Inductive loads generally have lagging power factor."},
+{title:"5. Leading PF",text:"Capacitive loads generally have leading power factor."},
+{title:"6. Importance",text:"Low power factor causes higher current and increased losses for a given useful power."},
+{title:"7. Improvement",text:"Capacitor banks are commonly used to improve lagging power factor."}
+],"Voltage ─────→\nCurrent  ↘ φ\nPF = cos φ","Remember: inductive = lagging, capacitive = leading."),
+
+makeQ("Explain transformer construction and working principle.","Transformer की construction और working principle समझाइए.",
+[
+{title:"1. Definition",text:"A transformer is a static electrical device that transfers AC electrical energy from one circuit to another by electromagnetic induction."},
+{title:"2. Core",text:"The magnetic core provides a low-reluctance path for alternating magnetic flux."},
+{title:"3. Windings",text:"Primary winding receives input AC and secondary winding supplies output."},
+{title:"4. Principle",text:"It works on mutual electromagnetic induction."},
+{title:"5. Working",text:"AC in primary creates alternating magnetic flux in the core. This flux links the secondary and induces EMF."},
+{title:"6. Voltage Ratio",text:"For an ideal transformer, V₂/V₁ = N₂/N₁."},
+{title:"7. Conclusion",text:"Transformers are widely used for voltage step-up and step-down."}
+],"AC → Primary winding → Magnetic flux → Secondary winding → Output","Draw core, primary and secondary."),
+
+makeQ("Explain open-circuit and short-circuit tests of a transformer.","Transformer के OC और SC tests समझाइए.",
+[
+{title:"1. Open-Circuit Test",text:"The secondary is kept open and rated voltage is applied to one winding, usually the low-voltage side."},
+{title:"2. OC Measurements",text:"Voltage, current and input power are measured. The input power approximately represents core loss at rated voltage."},
+{title:"3. Short-Circuit Test",text:"One winding is short-circuited and a low voltage is applied to the other winding until rated current flows."},
+{title:"4. SC Measurements",text:"Voltage, current and input power are measured. The input power mainly represents copper loss at rated current."},
+{title:"5. Parameters",text:"The tests help determine equivalent circuit parameters."},
+{title:"6. Efficiency",text:"Loss information can be used to estimate transformer efficiency."},
+{title:"7. Conclusion",text:"OC and SC tests are performed without loading the transformer fully."}
+],"OC → Secondary open → Measure V,I,W\nSC → Secondary short → Low V → Rated I","Very important numerical topic."),
+
+makeQ("Explain three-phase induction motor and torque-slip characteristics.","Three-phase induction motor और torque-slip characteristics समझाइए.",
+[
+{title:"1. Definition",text:"A three-phase induction motor converts electrical energy into mechanical energy using electromagnetic induction."},
+{title:"2. Stator",text:"Three-phase AC supplied to stator windings produces a rotating magnetic field."},
+{title:"3. Rotor",text:"The rotating field induces current in the rotor, producing torque."},
+{title:"4. Slip",text:"Slip is the relative difference between synchronous speed and rotor speed: s=(Ns−N)/Ns."},
+{title:"5. Torque",text:"Motor torque depends on rotor resistance, reactance and slip."},
+{title:"6. Characteristics",text:"At low slip, torque approximately increases with slip; near higher slip, the behaviour changes and maximum torque is reached."},
+{title:"7. Applications",text:"Used in pumps, fans, conveyors, compressors and industrial drives."}
+],"3-Phase Supply → Stator RMF → Induced Rotor Current → Torque → Rotation","Draw torque-slip curve with maximum torque."),
+
+makeQ("Explain electrical safety, earthing and fuse.","Electrical safety, earthing और fuse समझाइए.",
+[
+{title:"1. Electrical Safety",text:"Electrical safety means preventing shock, fire, short circuit and equipment damage."},
+{title:"2. Earthing",text:"Earthing provides a low-resistance path for fault current to the ground."},
+{title:"3. Need of Earthing",text:"It helps protect people and equipment when insulation fails."},
+{title:"4. Fuse",text:"A fuse is a protective device that melts when excessive current flows through it."},
+{title:"5. Overcurrent",text:"A fuse protects against overcurrent and short-circuit conditions."},
+{title:"6. Safety Practices",text:"Use proper insulation, dry hands, correct ratings and switch off supply before maintenance."},
+{title:"7. Conclusion",text:"Earthing and protective devices are essential parts of electrical safety."}
+],"Fault → Earth wire → Ground\nExcess current → Fuse melts → Circuit opens","Never bypass a protective device.")
+]);
+
+
+addSubject("A","BT-105","Engineering Graphics","📏",[
+makeQ("Explain scales, representative fraction and types of scales.","Scales, RF और types of scales समझाइए.",
+[
+{title:"1. Scale",text:"A scale is used to represent a large or small object on a drawing sheet in a suitable size."},
+{title:"2. Representative Fraction",text:"RF = Length on drawing / Actual length, using the same units."},
+{title:"3. Full Size",text:"RF = 1 when drawing size equals actual size."},
+{title:"4. Reducing Scale",text:"RF is less than 1 when the drawing is smaller than the actual object."},
+{title:"5. Enlarging Scale",text:"RF is greater than 1 when the drawing is larger than the actual object."},
+{title:"6. Types",text:"Common scales include plain scale, diagonal scale and comparative scale."},
+{title:"7. Conclusion",text:"Correct scale allows accurate representation of dimensions."}
+],"RF = Drawing length / Actual length","Always use same units before calculating RF."),
+
+makeQ("Explain conic sections and their types.","Conic sections और उनके types समझाइए.",
+[
+{title:"1. Meaning",text:"Conic sections are curves obtained by cutting a cone with a plane."},
+{title:"2. Circle",text:"A circle is obtained when the cutting plane is perpendicular to the axis of a right circular cone."},
+{title:"3. Ellipse",text:"An ellipse is obtained when the plane cuts one side of the cone without being parallel to a generator."},
+{title:"4. Parabola",text:"A parabola is obtained when the cutting plane is parallel to a generator."},
+{title:"5. Hyperbola",text:"A hyperbola is obtained when the plane cuts both nappes of the cone."},
+{title:"6. Engineering Use",text:"Conic curves are used in mechanical parts, architecture and engineering design."},
+{title:"7. Conclusion",text:"Circle, ellipse, parabola and hyperbola are the major conic sections."}
+],"Cone cut → Circle / Ellipse / Parabola / Hyperbola","Draw simple shapes of all four curves."),
+
+makeQ("Explain orthographic projection.","Orthographic projection समझाइए.",
+[
+{title:"1. Definition",text:"Orthographic projection represents a three-dimensional object using two-dimensional views."},
+{title:"2. Principle",text:"Projectors are drawn perpendicular to the reference plane."},
+{title:"3. Front View",text:"Front view shows height and width."},
+{title:"4. Top View",text:"Top view shows width and depth."},
+{title:"5. Side View",text:"Side view shows height and depth."},
+{title:"6. Importance",text:"It gives accurate dimensions and shape information for manufacturing and construction."},
+{title:"7. Conclusion",text:"Orthographic projection is a basic engineering drawing method."}
+],"3D Object → Front View + Top View + Side View","Label each view clearly."),
+
+makeQ("Explain projection of points and lines.","Points और lines का projection समझाइए.",
+[
+{title:"1. Projection of Point",text:"A point is represented by projecting it perpendicular to the reference planes."},
+{title:"2. Reference Planes",text:"Horizontal Plane (HP) and Vertical Plane (VP) are commonly used."},
+{title:"3. Point Position",text:"The position of the point with respect to HP and VP determines its projections."},
+{title:"4. Line Projection",text:"A line is projected by projecting its two end points and joining their corresponding projections."},
+{title:"5. Inclination",text:"The apparent length and angle depend on the line's orientation with respect to HP and VP."},
+{title:"6. Procedure",text:"Draw reference line, locate point/ends and project perpendiculars as required."},
+{title:"7. Conclusion",text:"Projection helps represent spatial positions on drawing planes."}
+],"VP\n──────── XY ────────\nHP\nPoint → Projectors → Views","Practice point positions in all quadrants."),
+
+makeQ("Explain projection of planes and solids.","Planes और solids का projection समझाइए.",
+[
+{title:"1. Plane",text:"A plane is a flat surface having length and breadth."},
+{title:"2. Plane Projection",text:"Its projection depends on its inclination to HP and VP."},
+{title:"3. Solid",text:"A solid is a three-dimensional object such as prism, pyramid, cylinder or cone."},
+{title:"4. Steps",text:"First draw the simple position, then project points and obtain the required views."},
+{title:"5. Inclination",text:"When a plane or solid is inclined, construction is generally performed in stages."},
+{title:"6. Views",text:"Front, top and side views can be obtained as required."},
+{title:"7. Conclusion",text:"Accurate projection is essential for engineering visualization."}
+],"Solid → First position → Inclination → Final projection","Use construction lines lightly."),
+
+makeQ("Explain section of solids.","Section of solids समझाइए.",
+[
+{title:"1. Definition",text:"Sectioning is the process of imagining a solid cut by a cutting plane to reveal its internal shape."},
+{title:"2. Cutting Plane",text:"The plane that cuts the solid is called the section plane."},
+{title:"3. Sectional View",text:"The view obtained after removing the portion between observer and cutting plane is called sectional view."},
+{title:"4. Hatching",text:"The cut surface is generally shown by thin equally spaced section lines."},
+{title:"5. Purpose",text:"Sectioning shows internal features that cannot be seen in ordinary external views."},
+{title:"6. Procedure",text:"Draw the solid, locate cutting plane, project intersections and hatch the cut surface."},
+{title:"7. Conclusion",text:"Sectional views are important for understanding internal construction."}
+],"Solid + Cutting Plane → Section → Sectional View + Hatching","Show cutting plane and hatch the cut area."),
+
+makeQ("Explain development of surfaces.","Development of surfaces समझाइए.",
+[
+{title:"1. Definition",text:"Development is the process of unfolding a three-dimensional surface onto a plane without changing its true size."},
+{title:"2. Purpose",text:"It is used to make patterns for sheet-metal work and fabrication."},
+{title:"3. Prism",text:"The surfaces of a prism can be developed by laying out equal base sides along a straight line."},
+{title:"4. Cylinder",text:"The developed lateral surface of a cylinder is a rectangle whose length equals circumference."},
+{title:"5. Cone",text:"The lateral surface of a cone develops into a sector of a circle."},
+{title:"6. Methods",text:"Parallel-line, radial-line and triangulation methods are commonly used."},
+{title:"7. Conclusion",text:"Surface development converts 3D surfaces into usable flat patterns."}
+],"3D Surface → Unfold → 2D Pattern","Important for sheet-metal applications."),
+
+makeQ("Explain isometric projection and isometric scale.","Isometric projection और isometric scale समझाइए.",
+[
+{title:"1. Definition",text:"Isometric projection represents three dimensions of an object in one pictorial view."},
+{title:"2. Axes",text:"The three isometric axes are equally inclined to one another in the standard representation."},
+{title:"3. Isometric Lines",text:"Lines parallel to the three main axes are called isometric lines."},
+{title:"4. Isometric Scale",text:"In true isometric projection, lengths are reduced by the isometric scale."},
+{title:"5. Difference",text:"Isometric drawing commonly uses true lengths, while isometric projection uses reduced lengths."},
+{title:"6. Uses",text:"It gives a clear pictorial representation of engineering objects."},
+{title:"7. Conclusion",text:"Isometric projection is useful for visualization and communication of 3D shapes."}
+],"        Z\n        |\n        |\n   X----+----Y\n  30°  30°","Draw axes at approximately 30° to horizontal."),
+
+makeQ("What is CAD? Explain its advantages and applications.","CAD क्या है? इसके advantages और applications समझाइए.",
+[
+{title:"1. Definition",text:"CAD means Computer-Aided Design. It is the use of computers and software for creating, modifying and documenting designs."},
+{title:"2. Accuracy",text:"CAD provides accurate dimensions and geometry."},
+{title:"3. Speed",text:"Design changes can be made quickly without redrawing the complete design."},
+{title:"4. Storage",text:"Digital drawings can be stored, copied and modified easily."},
+{title:"5. Applications",text:"CAD is used in mechanical, civil, electrical, architecture and product design."},
+{title:"6. Advantages",text:"It improves productivity, accuracy, visualization and design modification."},
+{title:"7. Conclusion",text:"CAD is an important modern engineering design tool."}
+],"Engineer → CAD Software → 2D/3D Model → Modify → Final Drawing","Write at least five advantages."),
+
+makeQ("Explain engineering curves and their applications.","Engineering curves और applications समझाइए.",
+[
+{title:"1. Meaning",text:"Engineering curves are geometrical curves used to represent and design various engineering shapes."},
+{title:"2. Common Curves",text:"Common curves include cycloid, involute, spiral and helix."},
+{title:"3. Cycloid",text:"A cycloid is generated by a point on a circle rolling along a straight line."},
+{title:"4. Involute",text:"An involute is generated by unwinding a taut string from a curve such as a circle."},
+{title:"5. Spiral",text:"A spiral is a curve that moves around a centre while changing its distance from it."},
+{title:"6. Applications",text:"These curves are used in gear profiles, springs, cams and machine components."},
+{title:"7. Conclusion",text:"Engineering curves help create functional and accurate machine shapes."}
+],"Rolling circle → Cycloid\nUnwound string → Involute\nCentre + changing radius → Spiral","Mention gear and cam applications.")
+]);addSubject("B","BT-201","Engineering Physics","🔬",[
+makeQ("Explain de Broglie's matter wave concept.","de Broglie matter wave concept समझाइए.",
+[
+{title:"1. Idea",text:"Louis de Broglie proposed that moving particles have wave nature."},
+{title:"2. Wavelength",text:"The matter-wave wavelength is λ = h/p, where h is Planck's constant and p is momentum."},
+{title:"3. Momentum",text:"For a particle of mass m moving with velocity v, p=mv, so λ=h/mv."},
+{title:"4. Meaning",text:"A particle such as an electron can show both particle and wave properties."},
+{title:"5. Evidence",text:"Electron diffraction experiments support the wave nature of matter."},
+{title:"6. Importance",text:"The idea is a basic concept of quantum mechanics."},
+{title:"7. Conclusion",text:"Every moving material particle is associated with a matter wave."}
+],"Particle moving → Matter wave\nλ = h/p","Memorize λ=h/p."),
+
+makeQ("Explain Heisenberg's uncertainty principle.","Heisenberg uncertainty principle समझाइए.",
+[
+{title:"1. Statement",text:"It is impossible to determine the exact position and exact momentum of a microscopic particle simultaneously."},
+{title:"2. Formula",text:"Δx Δp ≥ h/4π."},
+{title:"3. Meaning",text:"Greater certainty in position produces greater uncertainty in momentum, and vice versa."},
+{title:"4. Microscopic Particles",text:"The effect is important for electrons and other microscopic particles."},
+{title:"5. Cause",text:"It is a fundamental property of quantum systems, not simply an instrument error."},
+{title:"6. Importance",text:"It changes the classical idea of an exact particle path at microscopic scale."},
+{title:"7. Conclusion",text:"The principle is fundamental to quantum mechanics."}
+],"Position uncertainty Δx × Momentum uncertainty Δp ≥ h/4π","Write formula clearly."),
+
+makeQ("Explain Schrödinger wave equation.","Schrödinger wave equation समझाइए.",
+[
+{title:"1. Introduction",text:"Schrödinger equation describes the quantum state and behaviour of a microscopic particle."},
+{title:"2. Wave Function",text:"The wave function ψ contains information about the quantum state."},
+{title:"3. Time-Independent Form",text:"For a particle in potential V, the time-independent equation is −(ℏ²/2m)∇²ψ + Vψ = Eψ."},
+{title:"4. Energy",text:"E represents the allowed energy of the quantum state."},
+{title:"5. Probability",text:"|ψ|² is related to the probability density of finding the particle."},
+{title:"6. Applications",text:"It is used for quantum wells, atoms, molecules and many microscopic systems."},
+{title:"7. Conclusion",text:"Schrödinger equation is a central equation of quantum mechanics."}
+],"Schrödinger equation → ψ → |ψ|² → Probability","Mention physical meaning of ψ and |ψ|²."),
+
+makeQ("Explain Gauss law in electrostatics.","Electrostatics में Gauss law समझाइए.",
+[
+{title:"1. Statement",text:"The total electric flux through a closed surface is equal to the enclosed charge divided by ε₀."},
+{title:"2. Formula",text:"∮E·dA = Qenc/ε₀."},
+{title:"3. Electric Flux",text:"Electric flux represents the electric field passing through a surface."},
+{title:"4. Closed Surface",text:"The law applies to a closed Gaussian surface."},
+{title:"5. Symmetry",text:"It is especially useful for spherical, cylindrical and planar charge distributions with symmetry."},
+{title:"6. Applications",text:"It can be used to find electric field for highly symmetric charge distributions."},
+{title:"7. Conclusion",text:"Gauss law connects electric field flux with enclosed charge."}
+],"Closed surface S\n     ↗ E\n  ↗  |  ↖\n      +Q\nFlux = Q/ε₀","Write closed surface and formula."),
+
+makeQ("State and explain Faraday's laws of electromagnetic induction.","Faraday के electromagnetic induction laws समझाइए.",
+[
+{title:"1. First Law",text:"Whenever magnetic flux linked with a circuit changes, an EMF is induced in the circuit."},
+{title:"2. Second Law",text:"The magnitude of induced EMF is proportional to the rate of change of magnetic flux linkage."},
+{title:"3. Formula",text:"e = −N dΦ/dt."},
+{title:"4. Negative Sign",text:"The negative sign represents Lenz's law: induced effect opposes the change producing it."},
+{title:"5. Flux",text:"Φ is magnetic flux and N is number of turns."},
+{title:"6. Applications",text:"Generators, transformers and induction devices work using electromagnetic induction."},
+{title:"7. Conclusion",text:"Changing magnetic flux is the basic cause of induced EMF."}
+],"Changing magnetic flux → Induced EMF\nΦ changes → e = −N dΦ/dt","Formula is very important."),
+
+makeQ("Explain Maxwell's equations and their importance.","Maxwell equations और their importance समझाइए.",
+[
+{title:"1. Gauss Electric Law",text:"It relates electric flux to enclosed charge."},
+{title:"2. Gauss Magnetic Law",text:"It states that net magnetic flux through a closed surface is zero because isolated magnetic monopoles are not observed."},
+{title:"3. Faraday Law",text:"A changing magnetic field produces an electric field."},
+{title:"4. Ampere-Maxwell Law",text:"Magnetic field is produced by electric current and changing electric field."},
+{title:"5. Differential Forms",text:"Common forms are ∇·E=ρ/ε₀, ∇·B=0, ∇×E=−∂B/∂t and ∇×B=μ₀J+μ₀ε₀∂E/∂t."},
+{title:"6. Importance",text:"Together these equations describe fundamental electromagnetic behaviour."},
+{title:"7. Conclusion",text:"Maxwell's equations are the foundation of classical electromagnetism and electromagnetic waves."}
+],"Electric field ↔ Magnetic field\nMaxwell equations → Electromagnetic waves","Write all four equations."),
+
+makeQ("Explain P-N junction diode and its characteristics.","P-N junction diode और उसकी characteristics समझाइए.",
+[
+{title:"1. Definition",text:"A P-N junction diode is a semiconductor device formed by joining p-type and n-type materials."},
+{title:"2. Depletion Region",text:"A depletion region forms near the junction and creates a potential barrier."},
+{title:"3. Forward Bias",text:"In forward bias, the barrier reduces and significant current flows after the knee/threshold region."},
+{title:"4. Reverse Bias",text:"In reverse bias, only a small reverse current flows until breakdown at sufficiently high reverse voltage."},
+{title:"5. V-I Characteristic",text:"The forward and reverse current behaviour is represented by the diode V-I curve."},
+{title:"6. Applications",text:"Diodes are used in rectifiers, switching, protection and signal circuits."},
+{title:"7. Conclusion",text:"A diode mainly allows current in one direction."}
+],"P-region | Depletion | N-region\nForward bias → barrier decreases","Draw V-I characteristic if asked."),
+
+makeQ("Explain Zener diode and its application as a voltage regulator.","Zener diode और voltage regulator के रूप में इसका application समझाइए.",
+[
+{title:"1. Definition",text:"A Zener diode is a specially designed diode intended to operate in reverse breakdown region."},
+{title:"2. Breakdown",text:"At approximately its Zener voltage, the reverse current can change significantly while voltage remains nearly constant."},
+{title:"3. Regulation",text:"A Zener diode connected properly across a load can maintain nearly constant load voltage."},
+{title:"4. Series Resistor",text:"A resistor is used to limit current and protect the Zener diode."},
+{title:"5. Working",text:"Changes in supply or load cause Zener current to change while the regulated voltage stays approximately near VZ."},
+{title:"6. Applications",text:"Used in voltage regulation, reference circuits and protection."},
+{title:"7. Conclusion",text:"Zener diode is a simple and useful voltage regulation device."}
+],"Vin → Series R →+→ Load\n                 |\n               Zener\n                 |\n                GND","Draw reverse-biased Zener regulator."),
+
+makeQ("Explain Hall effect and its applications.","Hall effect और applications समझाइए.",
+[
+{title:"1. Definition",text:"Hall effect is the production of a transverse voltage across a current-carrying semiconductor when a magnetic field is applied perpendicular to the current."},
+{title:"2. Hall Voltage",text:"The transverse voltage is called Hall voltage."},
+{title:"3. Principle",text:"Moving charge carriers experience magnetic force and accumulate on one side of the material."},
+{title:"4. Hall Coefficient",text:"Hall coefficient depends on carrier type and concentration."},
+{title:"5. Carrier Type",text:"The sign of Hall coefficient can help identify whether major carriers are electrons or holes."},
+{title:"6. Applications",text:"Used for magnetic field measurement, current sensing, position sensing and semiconductor studies."},
+{title:"7. Conclusion",text:"Hall effect gives information about charge carriers and magnetic fields."}
+],"Current →→→\n      | B ⊙\n      ↓ Hall voltage","Show current, magnetic field and Hall voltage directions."),
+
+makeQ("Explain laser: principle, properties and applications.","Laser का principle, properties और applications समझाइए.",
+[
+{title:"1. Meaning",text:"LASER stands for Light Amplification by Stimulated Emission of Radiation."},
+{title:"2. Principle",text:"Laser action is based mainly on stimulated emission and population inversion."},
+{title:"3. Population Inversion",text:"More atoms must be present in an excited state than in the lower relevant state."},
+{title:"4. Properties",text:"Laser light is highly coherent, nearly monochromatic, highly directional and can have high intensity."},
+{title:"5. Working",text:"An active medium is excited, stimulated emission occurs, and optical feedback amplifies the light."},
+{title:"6. Applications",text:"Used in communication, medicine, industry, measurement and optical storage."},
+{title:"7. Conclusion",text:"Laser produces controlled, coherent and directional light."}
+],"Energy pump → Active medium → Stimulated emission → Mirrors → Laser output","Remember: coherence, monochromaticity, directionality.")
+]);
+
+
+addSubject("B","BT-202","Mathematics-II","∫",[
+makeQ("Explain Fourier series and its coefficients.","Fourier series और उसके coefficients समझाइए.",
+[
+{title:"1. Definition",text:"Fourier series expresses a periodic function as a sum of sine and cosine terms."},
+{title:"2. General Form",text:"f(x)=a₀/2 + Σ(aₙcos nx + bₙsin nx)."},
+{title:"3. a₀",text:"The constant coefficient is obtained by integrating the function over the standard interval."},
+{title:"4. aₙ",text:"aₙ is obtained by integrating f(x)cos(nx)."},
+{title:"5. bₙ",text:"bₙ is obtained by integrating f(x)sin(nx)."},
+{title:"6. Symmetry",text:"Even and odd properties can simplify the coefficients."},
+{title:"7. Applications",text:"Used in periodic signals, heat and vibration problems."}
+],"f(x)=a₀/2+Σ(aₙcos nx+bₙsin nx)","Formula + coefficients are important."),
+
+makeQ("Explain Beta and Gamma functions with their relation.","Beta और Gamma functions तथा relation समझाइए.",
+[
+{title:"1. Gamma",text:"Γ(n)=∫₀∞xⁿ⁻¹e⁻ˣdx for suitable n."},
+{title:"2. Factorial Relation",text:"Γ(n)=(n−1)! for positive integers."},
+{title:"3. Beta",text:"B(m,n)=∫₀¹xᵐ⁻¹(1−x)ⁿ⁻¹dx."},
+{title:"4. Relation",text:"B(m,n)=Γ(m)Γ(n)/Γ(m+n)."},
+{title:"5. Symmetry",text:"B(m,n)=B(n,m)."},
+{title:"6. Uses",text:"Useful in evaluating definite integrals."},
+{title:"7. Conclusion",text:"Beta and Gamma functions are important special functions."}
+],"B(m,n)=Γ(m)Γ(n)/Γ(m+n)","Memorize relation."),
+
+makeQ("Explain Laplace transform and its properties.","Laplace transform और उसकी properties समझाइए.",
+[
+{title:"1. Definition",text:"Laplace transform converts a function of time t into a function of complex variable s."},
+{title:"2. Formula",text:"L{f(t)}=∫₀∞e⁻ˢᵗf(t)dt."},
+{title:"3. Linearity",text:"L{af+bg}=aL{f}+bL{g}."},
+{title:"4. Derivative",text:"L{f'}=sF(s)−f(0) under standard conditions."},
+{title:"5. Integration",text:"Laplace transform also provides useful formulas for integrals of functions."},
+{title:"6. Applications",text:"It is widely used to solve differential equations and system problems."},
+{title:"7. Conclusion",text:"Laplace transform changes differential operations into algebraic operations in many problems."}
+],"f(t) ──Laplace──> F(s)","Write definition and at least three properties."),
+
+makeQ("Define ordinary differential equation. Explain order and degree.","ODE define कीजिए तथा order और degree समझाइए.",
+[
+{title:"1. Definition",text:"An ordinary differential equation contains derivatives of a dependent variable with respect to one independent variable."},
+{title:"2. Order",text:"Order is the order of the highest derivative present in the equation."},
+{title:"3. Degree",text:"Degree is the power of the highest order derivative after the equation is made polynomial in derivatives."},
+{title:"4. Example",text:"In d²y/dx² + 3dy/dx + y=0, order is 2 and degree is 1."},
+{title:"5. Important Condition",text:"Degree is defined only when the equation can be expressed as a polynomial in derivatives."},
+{title:"6. Use",text:"Order and degree classify differential equations."},
+{title:"7. Conclusion",text:"Always identify the highest derivative first."}
+],"ODE → Highest derivative → Order\nPower of highest derivative → Degree","Use a simple example in exam."),
+
+makeQ("Explain partial differential equation and its formation.","Partial differential equation और formation समझाइए.",
+[
+{title:"1. Definition",text:"A partial differential equation contains partial derivatives of a function of two or more independent variables."},
+{title:"2. Variables",text:"For example, z may depend on x and y."},
+{title:"3. Formation",text:"A PDE can be formed by differentiating a given relation and eliminating arbitrary constants or functions."},
+{title:"4. Derivatives",text:"Notation such as ∂z/∂x and ∂z/∂y is used."},
+{title:"5. Order",text:"Order is the highest order partial derivative present."},
+{title:"6. Applications",text:"PDEs occur in heat flow, wave motion, fluid flow and engineering models."},
+{title:"7. Conclusion",text:"PDEs are used to describe systems involving several independent variables."}
+],"z=f(x,y) → Partial derivatives → Eliminate arbitrary quantities → PDE","Show differentiation steps."),
+
+makeQ("Explain double and triple integration with applications.","Double और triple integration तथा applications समझाइए.",
+[
+{title:"1. Double Integration",text:"Double integration integrates a function over a two-dimensional region."},
+{title:"2. Form",text:"It may be written as ∬R f(x,y)dA."},
+{title:"3. Applications",text:"It can calculate area, mass, centroid and moments for suitable distributions."},
+{title:"4. Triple Integration",text:"Triple integration integrates over a three-dimensional volume."},
+{title:"5. Form",text:"It may be written as ∭V f(x,y,z)dV."},
+{title:"6. Applications",text:"It is used for volume, mass and other three-dimensional quantities."},
+{title:"7. Conclusion",text:"Multiple integration extends ordinary integration to areas and volumes."}
+],"2D Region → ∬\n3D Volume → ∭","Draw region/volume when required."),
+
+makeQ("Explain gradient, divergence and curl.","Gradient, divergence और curl समझाइए.",
+[
+{title:"1. Gradient",text:"Gradient of a scalar field gives the direction of maximum increase and its rate."},
+{title:"2. Formula",text:"∇φ = i∂φ/∂x + j∂φ/∂y + k∂φ/∂z."},
+{title:"3. Divergence",text:"Divergence measures the net outward flow tendency of a vector field from a point."},
+{title:"4. Formula",text:"∇·A = ∂Ax/∂x + ∂Ay/∂y + ∂Az/∂z."},
+{title:"5. Curl",text:"Curl measures the local rotational tendency of a vector field."},
+{title:"6. Formula",text:"Curl A = ∇×A."},
+{title:"7. Applications",text:"These operators are important in electromagnetism, fluid mechanics and vector calculus."}
+],"Scalar φ → ∇φ = Gradient\nVector A → ∇·A = Divergence\nVector A → ∇×A = Curl","Learn all three formulas."),
+
+makeQ("State Green's theorem and explain its application.","Green theorem और application समझाइए.",
+[
+{title:"1. Statement",text:"Green's theorem relates a line integral around a positively oriented closed plane curve to a double integral over the enclosed region."},
+{title:"2. Formula",text:"∮C(Pdx+Qdy)=∬R(∂Q/∂x−∂P/∂y)dA under suitable conditions."},
+{title:"3. Curve",text:"C should be a suitable closed curve bounding region R."},
+{title:"4. Orientation",text:"Positive orientation is normally counterclockwise."},
+{title:"5. Application",text:"A difficult line integral can sometimes be converted into a simpler double integral."},
+{title:"6. Conditions",text:"Functions and region should satisfy the required smoothness conditions."},
+{title:"7. Conclusion",text:"Green's theorem connects boundary information with area information."}
+],"Closed curve C ↔ Region R\nLine integral ↔ Double integral","Write theorem formula correctly."),
+
+makeQ("Explain Taylor and Maclaurin series with uses.","Taylor और Maclaurin series तथा uses समझाइए.",
+[
+{title:"1. Taylor",text:"Taylor series expands a function about x=a using derivatives at a."},
+{title:"2. Formula",text:"f(x)=Σ f⁽ⁿ⁾(a)(x−a)ⁿ/n!."},
+{title:"3. Maclaurin",text:"Maclaurin series is Taylor series about x=0."},
+{title:"4. Calculation",text:"Find derivatives and substitute x=a or x=0 as required."},
+{title:"5. Approximation",text:"A finite number of terms can approximate a function near the expansion point."},
+{title:"6. Uses",text:"Used in numerical calculations, engineering approximations and mathematical analysis."},
+{title:"7. Conclusion",text:"These series simplify complicated functions into polynomial-like forms."}
+],"Taylor: centre a\nMaclaurin: centre 0","Remember Maclaurin = Taylor at zero."),
+
+makeQ("Explain convergence tests for infinite series.","Infinite series के convergence tests समझाइए.",
+[
+{title:"1. Meaning",text:"A series converges when its partial sums approach a finite limit."},
+{title:"2. Necessary Condition",text:"For Σaₙ to converge, aₙ must approach zero."},
+{title:"3. Comparison Test",text:"Compare with a known positive-term series."},
+{title:"4. Ratio Test",text:"Use L=lim |aₙ₊₁/aₙ|. Values below 1 indicate absolute convergence; values above 1 indicate divergence."},
+{title:"5. Root Test",text:"Use L=lim |aₙ|^(1/n) with similar conclusions."},
+{title:"6. Integral Test",text:"Compare the series with the corresponding improper integral for suitable positive decreasing functions."},
+{title:"7. Conclusion",text:"The form of the series decides which test is most convenient."}
+],"Series → Choose test → Limit/Comparison → Convergence result","Write test condition and conclusion.")
+]);addSubject("B","BT-203","Basic Mechanical Engineering","⚙️",[
+makeQ("Explain four-stroke petrol engine with working.","Four-stroke petrol engine की working समझाइए.",
+[
+{title:"1. Definition",text:"A four-stroke petrol engine is a spark-ignition engine that completes one cycle in four piston strokes."},
+{title:"2. Suction Stroke",text:"The inlet valve is open and the air-fuel mixture enters the cylinder while the piston moves down."},
+{title:"3. Compression Stroke",text:"Both valves are closed and the mixture is compressed as the piston moves upward."},
+{title:"4. Power Stroke",text:"A spark ignites the compressed mixture. Expanding gases push the piston downward and produce power."},
+{title:"5. Exhaust Stroke",text:"The exhaust valve opens and burnt gases leave as the piston moves upward."},
+{title:"6. Main Parts",text:"Cylinder, piston, connecting rod, crankshaft, inlet valve, exhaust valve and spark plug are important parts."},
+{title:"7. Conclusion",text:"One power stroke occurs for every two crankshaft revolutions."}
+],"Suction → Compression → Power → Exhaust\n          4 STROKES","Draw labelled four-stroke diagram."),
+
+makeQ("Explain four-stroke diesel engine with working.","Four-stroke diesel engine की working समझाइए.",
+[
+{title:"1. Definition",text:"A four-stroke diesel engine is a compression-ignition engine completing one cycle in four strokes."},
+{title:"2. Suction",text:"Only air is drawn into the cylinder during the suction stroke."},
+{title:"3. Compression",text:"The air is highly compressed, raising its temperature."},
+{title:"4. Power",text:"Diesel fuel is injected into hot compressed air and ignites without a spark plug."},
+{title:"5. Exhaust",text:"Burnt gases are expelled through the exhaust valve."},
+{title:"6. Difference",text:"Diesel engine uses compression ignition, while petrol engine generally uses spark ignition."},
+{title:"7. Conclusion",text:"The four strokes are suction, compression, power and exhaust."}
+],"Air intake → Compression → Fuel injection + Ignition → Exhaust","Draw diesel engine with injector."),
+
+makeQ("Explain Cochran boiler with construction and working.","Cochran boiler की construction और working समझाइए.",
+[
+{title:"1. Definition",text:"Cochran boiler is a vertical, multi-tubular, fire-tube boiler."},
+{title:"2. Construction",text:"It has a vertical shell, furnace, combustion chamber, fire tubes, grate, chimney and steam space."},
+{title:"3. Fuel",text:"Fuel burns on the grate and produces hot gases."},
+{title:"4. Working",text:"Hot gases pass through fire tubes and transfer heat to surrounding water."},
+{title:"5. Steam Formation",text:"Water absorbs heat and converts into steam collected in the upper steam space."},
+{title:"6. Advantages",text:"It is compact, simple and suitable for small steam requirements."},
+{title:"7. Conclusion",text:"Cochran boiler is an important example of a vertical fire-tube boiler."}
+],"Steam space\n────────────\nWater + Fire tubes\n   🔥 Furnace\n      ↓\n    Chimney","Label shell, furnace, fire tubes and chimney."),
+
+makeQ("Explain boiler mountings and accessories.","Boiler mountings और accessories समझाइए.",
+[
+{title:"1. Mountings",text:"Boiler mountings are essential fittings required for safe operation and control of a boiler."},
+{title:"2. Safety Valve",text:"It releases steam when pressure becomes dangerously high."},
+{title:"3. Water Level Indicator",text:"It shows the water level inside the boiler."},
+{title:"4. Pressure Gauge",text:"It indicates steam pressure."},
+{title:"5. Accessories",text:"Accessories improve boiler efficiency or performance and may include economizer, superheater and air preheater."},
+{title:"6. Difference",text:"Mountings are essential for operation and safety; accessories are mainly used to improve performance."},
+{title:"7. Conclusion",text:"Both are important for reliable boiler operation."}
+],"Boiler → Mountings: Safety valve / Pressure gauge / Water level indicator\nAccessories: Economizer / Superheater","Write difference clearly."),
+
+makeQ("Explain reciprocating pump with working.","Reciprocating pump की working समझाइए.",
+[
+{title:"1. Definition",text:"A reciprocating pump is a positive-displacement pump that uses the reciprocating motion of a piston or plunger."},
+{title:"2. Main Parts",text:"Cylinder, piston, suction pipe, delivery pipe and valves are important parts."},
+{title:"3. Suction",text:"When the piston moves away, pressure inside the cylinder decreases and liquid enters through the suction valve."},
+{title:"4. Delivery",text:"When the piston moves toward the cylinder head, pressure increases and liquid is pushed through the delivery valve."},
+{title:"5. Action",text:"Suction and delivery occur during alternate strokes in a simple reciprocating pump."},
+{title:"6. Uses",text:"Used where high pressure and relatively low flow are required."},
+{title:"7. Conclusion",text:"It gives accurate positive displacement of liquid."}
+],"Suction stroke → Liquid enters\nDelivery stroke → Liquid leaves","Draw piston and two valves."),
+
+makeQ("Explain centrifugal pump with working.","Centrifugal pump की working समझाइए.",
+[
+{title:"1. Definition",text:"A centrifugal pump is a rotodynamic pump that uses a rotating impeller to increase liquid velocity and pressure."},
+{title:"2. Main Parts",text:"Impeller, casing, suction pipe, delivery pipe and shaft are important parts."},
+{title:"3. Priming",text:"The pump and suction line are filled with liquid before starting to remove air."},
+{title:"4. Working",text:"The rotating impeller gives velocity to the liquid. The casing converts part of velocity into pressure."},
+{title:"5. Delivery",text:"Pressurized liquid leaves through the delivery pipe."},
+{title:"6. Advantages",text:"It provides continuous flow and has simple construction."},
+{title:"7. Conclusion",text:"Centrifugal pumps are widely used for water supply and industrial applications."}
+],"Suction → Impeller ↻ → Casing → Delivery","Mention priming."),
+
+makeQ("What is a compressor? Explain its types.","Compressor क्या है? इसके types समझाइए.",
+[
+{title:"1. Definition",text:"A compressor is a machine that increases the pressure of a gas by reducing its volume or adding mechanical energy."},
+{title:"2. Positive Displacement",text:"These compressors trap a fixed quantity of gas and compress it."},
+{title:"3. Reciprocating",text:"A piston compresses gas inside a cylinder."},
+{title:"4. Rotary",text:"Rotary compressors use rotating elements to compress gas."},
+{title:"5. Dynamic Compressors",text:"They increase gas velocity and then convert velocity into pressure."},
+{title:"6. Applications",text:"Used in refrigeration, pneumatic systems, gas plants and industries."},
+{title:"7. Conclusion",text:"Compressor selection depends on pressure and flow requirements."}
+],"Gas → Compressor → High-pressure gas","Mention reciprocating, rotary and dynamic types."),
+
+makeQ("State and explain First Law of Thermodynamics.","First Law of Thermodynamics समझाइए.",
+[
+{title:"1. Statement",text:"Energy cannot be created or destroyed; it can only be converted from one form to another."},
+{title:"2. System",text:"A thermodynamic system can exchange energy as heat and work with surroundings."},
+{title:"3. Equation",text:"For a simple closed system, Q = ΔU + W, where W is work done by the system."},
+{title:"4. Internal Energy",text:"ΔU represents change in internal energy."},
+{title:"5. Meaning",text:"Heat supplied is used to increase internal energy and/or perform work."},
+{title:"6. Importance",text:"The law is the basis of energy balance in thermodynamic processes."},
+{title:"7. Conclusion",text:"It expresses the conservation of energy in thermodynamic systems."}
+],"Heat Q → System → ΔU + Work W\nQ = ΔU + W","Check sign convention used in the question."),
+
+makeQ("Explain Second Law of Thermodynamics.","Second Law of Thermodynamics समझाइए.",
+[
+{title:"1. Meaning",text:"The second law gives the direction of natural thermodynamic processes and limits the conversion of heat into work."},
+{title:"2. Kelvin-Planck Statement",text:"A cyclic heat engine cannot convert all heat received from a single reservoir completely into work."},
+{title:"3. Clausius Statement",text:"Heat does not flow naturally from a colder body to a hotter body without external work."},
+{title:"4. Entropy",text:"Entropy is a thermodynamic property used to describe energy dispersal and process direction."},
+{title:"5. Heat Engine",text:"A heat engine receives heat from a high-temperature source, produces work and rejects some heat to a sink."},
+{title:"6. Refrigerator",text:"A refrigerator transfers heat from a low-temperature region to a high-temperature region using work."},
+{title:"7. Conclusion",text:"The second law explains why real processes have a preferred direction."}
+],"Hot source → Heat → Engine → Work + Heat to sink\nRefrigerator: Work → Cold → Hot","Write either Kelvin-Planck or Clausius statement."),
+
+makeQ("Explain lathe machine, its main parts and operations.","Lathe machine के main parts और operations समझाइए.",
+[
+{title:"1. Definition",text:"A lathe is a machine tool in which the workpiece rotates while a cutting tool removes material."},
+{title:"2. Bed",text:"The bed supports and guides the main components."},
+{title:"3. Headstock",text:"It contains the spindle and drive mechanism and supports the rotating work."},
+{title:"4. Tailstock",text:"It supports the free end of long workpieces and can hold tools such as drills."},
+{title:"5. Carriage",text:"The carriage supports and moves the cutting tool along the workpiece."},
+{title:"6. Operations",text:"Common operations include turning, facing, drilling, boring, threading and knurling."},
+{title:"7. Conclusion",text:"Lathe is one of the most important machine tools used for cylindrical work."}
+],"Headstock → [ ROTATING WORK ] ← Tailstock\n              ↑\n            Tool\n             ↓\n          Carriage","Draw labelled lathe machine.")
+]);
+
+
+addSubject("B","BT-204","Basic Civil Engineering & Mechanics","🏗️",[
+makeQ("Explain stress-strain curve for a ductile material.","Ductile material का stress-strain curve समझाइए.",
+[
+{title:"1. Stress",text:"Stress is internal resisting force per unit area: σ=P/A."},
+{title:"2. Strain",text:"Strain is deformation per original dimension."},
+{title:"3. Elastic Region",text:"In the initial region, stress is approximately proportional to strain and the material returns to original shape after unloading."},
+{title:"4. Yield Point",text:"Beyond the elastic region, permanent deformation begins at the yield stage."},
+{title:"5. Plastic Region",text:"Large plastic deformation occurs and stress may rise toward the ultimate tensile strength."},
+{title:"6. Ultimate and Fracture",text:"The curve reaches ultimate strength and later falls toward fracture due to necking in a typical ductile specimen."},
+{title:"7. Conclusion",text:"The curve shows the mechanical behaviour of ductile material under tensile loading."}
+],"Stress ↑\n      |        U\n      |      /  \\\n      |_____/    \\__ Fracture\n      +----------------→ Strain","Label elastic, yield, ultimate and fracture regions."),
+
+makeQ("State and explain Bernoulli's theorem.","Bernoulli theorem समझाइए.",
+[
+{title:"1. Statement",text:"For steady, incompressible and frictionless flow along a streamline, total mechanical energy per unit weight remains constant."},
+{title:"2. Equation",text:"P/ρg + V²/2g + z = constant."},
+{title:"3. Pressure Head",text:"P/ρg represents pressure energy per unit weight."},
+{title:"4. Velocity Head",text:"V²/2g represents kinetic energy per unit weight."},
+{title:"5. Datum Head",text:"z represents potential energy per unit weight due to elevation."},
+{title:"6. Conditions",text:"Flow should be steady, incompressible and with negligible friction for the basic form."},
+{title:"7. Applications",text:"Used in venturimeter, nozzle, flow measurement and many fluid-flow calculations."}
+],"Point 1 → streamline → Point 2\nP/ρg + V²/2g + z = constant","Write assumptions and equation."),
+
+makeQ("State and explain Lami's theorem.","Lami theorem समझाइए.",
+[
+{title:"1. Statement",text:"For a body in equilibrium under three concurrent forces, each force is proportional to the sine of the angle between the other two forces."},
+{title:"2. Formula",text:"P/sin α = Q/sin β = R/sin γ."},
+{title:"3. Conditions",text:"The three forces should be concurrent and the body should be in equilibrium."},
+{title:"4. Force Triangle",text:"The theorem is related to the sine rule applied to the force triangle."},
+{title:"5. Use",text:"It is useful for finding an unknown force or direction in three-force equilibrium problems."},
+{title:"6. Procedure",text:"Draw the free-body diagram, identify the opposite angles and apply the formula."},
+{title:"7. Conclusion",text:"Lami's theorem provides a quick solution for three concurrent equilibrium forces."}
+],"       P\n      / \\\n     /   \\\n    Q-----R\nP/sinα = Q/sinβ = R/sinγ","Angles must be opposite their corresponding forces."),
+
+makeQ("What is a Free Body Diagram? Explain its importance.","Free Body Diagram क्या है और इसका importance समझाइए.",
+[
+{title:"1. Definition",text:"A Free Body Diagram (FBD) is a simplified diagram of an isolated body showing all external forces and moments acting on it."},
+{title:"2. Isolation",text:"The body is separated conceptually from its surroundings."},
+{title:"3. Forces",text:"Weight, applied force, reaction, friction and other external forces are shown."},
+{title:"4. Directions",text:"Each force should have a clear direction and line of action."},
+{title:"5. Equilibrium",text:"FBD helps apply ΣFx=0, ΣFy=0 and ΣM=0 for equilibrium."},
+{title:"6. Importance",text:"It reduces complex physical problems into manageable mechanics equations."},
+{title:"7. Conclusion",text:"A correct FBD is the first major step in solving many mechanics problems."}
+],"        ↑ N\n        |\n← F --- [BODY] --- P →\n        |\n        ↓ W","Draw all external forces, not internal forces."),
+
+makeQ("Explain friction, its types and laws.","Friction के types और laws समझाइए.",
+[
+{title:"1. Definition",text:"Friction is the resisting force that opposes relative motion or tendency of motion between contacting surfaces."},
+{title:"2. Static Friction",text:"It acts when there is no relative motion and adjusts up to a limiting value."},
+{title:"3. Limiting Friction",text:"It is the maximum static friction just before motion begins."},
+{title:"4. Kinetic Friction",text:"It acts when surfaces are already sliding relative to each other."},
+{title:"5. Laws",text:"For dry surfaces, limiting friction is approximately proportional to normal reaction: F=μN."},
+{title:"6. Factors",text:"Surface condition and normal load affect friction; idealized dry-friction laws often neglect apparent contact area."},
+{title:"7. Conclusion",text:"Friction can be useful for traction but also causes energy loss and wear."}
+],"N ↑\n[ BLOCK ] → P\nFriction ←","Mention F=μN for limiting friction."),
+
+makeQ("Explain centroid and centre of gravity.","Centroid और centre of gravity समझाइए.",
+[
+{title:"1. Centroid",text:"The centroid is the geometrical centre of a plane area or line shape."},
+{title:"2. Centre of Gravity",text:"Centre of gravity is the point through which the resultant weight of a body acts."},
+{title:"3. Symmetry",text:"For a uniform symmetrical plane figure, the centroid lies on its symmetry axis."},
+{title:"4. Coordinates",text:"For composite areas, centroid coordinates can be found using weighted area averages such as x̄=ΣAx/ΣA."},
+{title:"5. Difference",text:"Centroid is mainly a geometrical concept, while centre of gravity is related to mass and gravity."},
+{title:"6. Applications",text:"Used in structural analysis, design and stability calculations."},
+{title:"7. Conclusion",text:"Finding these points helps understand how loads and areas are distributed."}
+],"Area A₁ + A₂ + ... → Composite centroid (x̄,ȳ)","Use symmetry whenever possible."),
+
+makeQ("Explain moment of inertia and its importance.","Moment of inertia और importance समझाइए.",
+[
+{title:"1. Definition",text:"Area moment of inertia describes how a plane area is distributed about an axis."},
+{title:"2. Formula",text:"For x-axis, Ix=∫y²dA; for y-axis, Iy=∫x²dA."},
+{title:"3. Unit",text:"The unit is length to the fourth power, such as m⁴ or mm⁴."},
+{title:"4. Parallel Axis Theorem",text:"I = IG + Ad², where IG is about the centroidal axis."},
+{title:"5. Perpendicular Axis",text:"For a plane lamina, Iz=Ix+Iy about perpendicular axes through the same point."},
+{title:"6. Importance",text:"Moment of inertia is important in beam bending and structural design."},
+{title:"7. Conclusion",text:"A larger suitable moment of inertia generally improves resistance to bending."}
+],"Area dA at distance y → contribution y²dA\nIx = ∫y²dA","Learn parallel-axis theorem."),
+
+makeQ("Explain shear force and bending moment in a beam.","Beam में shear force और bending moment समझाइए.",
+[
+{title:"1. Shear Force",text:"Shear force at a section is the algebraic sum of transverse forces on one side of the section."},
+{title:"2. Bending Moment",text:"Bending moment is the algebraic sum of moments of forces about the section on one side."},
+{title:"3. Sign Convention",text:"A consistent sign convention must be used for shear force and bending moment."},
+{title:"4. SFD",text:"Shear Force Diagram shows variation of shear force along the beam."},
+{title:"5. BMD",text:"Bending Moment Diagram shows variation of bending moment along the beam."},
+{title:"6. Important Relation",text:"The rate of change of bending moment is related to shear force."},
+{title:"7. Conclusion",text:"SFD and BMD help locate critical sections for beam design."}
+],"Load → Beam → SFD → BMD","Draw simple SFD and BMD for a basic beam."),
+
+makeQ("Explain levelling in surveying.","Surveying में levelling समझाइए.",
+[
+{title:"1. Definition",text:"Levelling is the process of determining the relative elevations of points with respect to a reference datum."},
+{title:"2. Instrument",text:"A level instrument and staff are commonly used."},
+{title:"3. Benchmark",text:"A benchmark is a point of known reduced level used as a reference."},
+{title:"4. Staff Readings",text:"Back sight and fore sight readings are taken to determine elevations."},
+{title:"5. Height of Instrument",text:"HI = RL of known point + BS, and RL of a point = HI − staff reading."},
+{title:"6. Methods",text:"Height of Instrument and Rise-and-Fall methods are common."},
+{title:"7. Conclusion",text:"Levelling is important for roads, buildings, drainage and construction layout."}
+],"Benchmark → BS → Level Instrument → FS → Next Point\nHI = RL + BS","Practice HI and RL calculations."),
+
+makeQ("Explain cement, its properties and types.","Cement, उसके properties और types समझाइए.",
+[
+{title:"1. Definition",text:"Cement is a binding material that sets and hardens after mixing with water and is widely used in construction."},
+{title:"2. Important Properties",text:"Fineness, setting time, soundness, strength and consistency are important properties."},
+{title:"3. Initial Setting",text:"Initial setting time indicates the time before the paste begins to lose plasticity."},
+{title:"4. Final Setting",text:"Final setting indicates when the paste has sufficiently hardened."},
+{title:"5. Types",text:"Common types include ordinary Portland cement, rapid hardening cement, low heat cement and sulphate resisting cement."},
+{title:"6. Uses",text:"Cement is used in concrete, mortar, plastering and many construction works."},
+{title:"7. Conclusion",text:"The type of cement should be selected according to construction requirements and environment."}
+],"Cement + Water → Paste → Setting → Hardening","Write properties + types + uses.")
+]);addSubject("B","BT-205","Basic Computer Engineering","💻",[
+makeQ("What is Object Oriented Programming? Explain its features, advantages, disadvantages and applications.","Object Oriented Programming क्या है? इसके features, advantages, disadvantages और applications समझाइए.",
+[
+{title:"1. Definition",text:"Object Oriented Programming (OOP) is a programming approach that organizes software around objects containing data and related functions."},
+{title:"2. Class and Object",text:"A class is a blueprint, while an object is an instance of a class."},
+{title:"3. Encapsulation",text:"Encapsulation combines data and methods and controls access to data."},
+{title:"4. Inheritance",text:"Inheritance allows a new class to reuse and extend features of an existing class."},
+{title:"5. Polymorphism",text:"Polymorphism allows the same interface or operation to behave differently in different situations."},
+{title:"6. Advantages and Applications",text:"OOP improves reuse, modularity and maintenance. It is used in software, games, GUI applications and many large systems."},
+{title:"7. Conclusion",text:"OOP models software using interacting objects and is widely used in modern programming."}
+],"Class → Object → Data + Methods\n        ↓\nEncapsulation / Inheritance / Polymorphism","Very important 7-mark question."),
+
+makeQ("Compare Object Oriented Programming with Procedural Programming.","OOP और Procedural Programming में comparison समझाइए.",
+[
+{title:"1. Basic Approach",text:"OOP organizes programs around objects, while procedural programming organizes programs around procedures or functions."},
+{title:"2. Data",text:"OOP can encapsulate data with methods; procedural programs commonly keep data and functions more separate."},
+{title:"3. Reuse",text:"OOP supports inheritance and reusable classes. Procedural programming mainly uses functions for reuse."},
+{title:"4. Security",text:"Encapsulation can provide better control over access to data in OOP."},
+{title:"5. Examples",text:"C++ and Java strongly support OOP; C is commonly taught as a procedural language."},
+{title:"6. Applications",text:"OOP is useful for large and complex systems, while procedural programming is often straightforward for smaller algorithmic tasks."},
+{title:"7. Conclusion",text:"Both approaches are useful; selection depends on problem requirements."}
+],"Procedural → Functions → Data processing\nOOP → Classes → Objects → Methods","Use a comparison table in exam."),
+
+makeQ("Explain Object Model in Object Oriented Programming.","OOP में Object Model समझाइए.",
+[
+{title:"1. Meaning",text:"An object model represents a system using objects, their attributes, operations and relationships."},
+{title:"2. Object",text:"An object has identity, state and behaviour."},
+{title:"3. Class",text:"A class defines common properties and behaviour for objects."},
+{title:"4. Encapsulation",text:"It keeps related data and operations together and controls access."},
+{title:"5. Inheritance",text:"It creates relationships in which a derived class receives features from a base class."},
+{title:"6. Polymorphism",text:"Different objects can respond differently to the same operation or interface."},
+{title:"7. Conclusion",text:"The object model provides a way to design software close to real-world entities."}
+],"Real-world Entity → Class → Objects\nObject = Identity + State + Behaviour","Give a simple Student or Car example."),
+
+makeQ("Explain basic features and concepts of C++.","C++ के basic features और concepts समझाइए.",
+[
+{title:"1. Introduction",text:"C++ is a general-purpose programming language that supports procedural, object-oriented and other programming styles."},
+{title:"2. Classes and Objects",text:"C++ allows programmers to create classes and objects."},
+{title:"3. Encapsulation",text:"Data and member functions can be combined in a class."},
+{title:"4. Inheritance",text:"Classes can inherit features from other classes."},
+{title:"5. Polymorphism",text:"C++ supports function overloading, operator overloading and virtual functions."},
+{title:"6. Other Features",text:"It supports constructors, destructors, templates, exception handling and the Standard Library."},
+{title:"7. Conclusion",text:"C++ is powerful for system software, applications, games and performance-oriented programs."}
+],"C++ → Class → Object\n      → Inheritance\n      → Polymorphism\n      → Templates","Mention major OOP features."),
+
+makeQ("Explain constructors and destructors in C++.","C++ में constructors और destructors समझाइए.",
+[
+{title:"1. Constructor",text:"A constructor is a special member function automatically called when an object is created."},
+{title:"2. Name",text:"Its name is the same as the class name and it has no return type."},
+{title:"3. Use",text:"It initializes object data and resources."},
+{title:"4. Destructor",text:"A destructor is a special member function called when an object is destroyed."},
+{title:"5. Destructor Syntax",text:"Its name is the class name preceded by ~ and it has no return type."},
+{title:"6. Difference",text:"Constructor initializes an object; destructor performs cleanup before the object is removed."},
+{title:"7. Conclusion",text:"They help manage object initialization and cleanup automatically."}
+],"Object created → Constructor()\nObject destroyed → Destructor()","Remember constructor has class name; destructor has ~class name."),
+
+makeQ("Explain inheritance and its types in C++.","C++ में inheritance और उसके types समझाइए.",
+[
+{title:"1. Definition",text:"Inheritance is a mechanism by which a derived class acquires features of a base class."},
+{title:"2. Base Class",text:"The existing class from which features are inherited is called the base or parent class."},
+{title:"3. Derived Class",text:"The new class receiving or extending features is called the derived or child class."},
+{title:"4. Single",text:"Single inheritance has one base and one derived class."},
+{title:"5. Multiple and Multilevel",text:"Multiple uses more than one base class; multilevel forms a chain of inheritance."},
+{title:"6. Hierarchical and Hybrid",text:"Hierarchical has multiple derived classes from one base. Hybrid combines inheritance forms."},
+{title:"7. Conclusion",text:"Inheritance improves code reuse and supports hierarchical design."}
+],"Base Class\n   ↓\nDerived Class\n\nTypes: Single / Multiple / Multilevel / Hierarchical / Hybrid","Draw a simple inheritance hierarchy."),
+
+makeQ("Explain polymorphism and its types with examples.","Polymorphism और उसके types with examples समझाइए.",
+[
+{title:"1. Definition",text:"Polymorphism means one interface or name can have different behaviours."},
+{title:"2. Compile-time",text:"Compile-time polymorphism is commonly achieved through function overloading and operator overloading."},
+{title:"3. Function Overloading",text:"Multiple functions can have the same name with different parameter lists."},
+{title:"4. Run-time",text:"Run-time polymorphism is commonly achieved using inheritance and virtual functions."},
+{title:"5. Virtual Function",text:"A virtual function allows the appropriate overridden function to be selected at run time through suitable base-class references or pointers."},
+{title:"6. Advantages",text:"Polymorphism improves flexibility, extensibility and reusable design."},
+{title:"7. Conclusion",text:"Polymorphism is a major feature of object-oriented programming."}
+],"Polymorphism\n├─ Compile-time\n│  ├─ Function overloading\n│  └─ Operator overloading\n└─ Run-time\n   └─ Virtual functions","Mention both types with examples."),
+
+makeQ("Explain OSI reference model and its seven layers.","OSI reference model और उसके seven layers समझाइए.",
+[
+{title:"1. Meaning",text:"OSI stands for Open Systems Interconnection. It is a seven-layer reference model for network communication."},
+{title:"2. Physical Layer",text:"It deals with transmission of raw bits over the physical medium."},
+{title:"3. Data Link Layer",text:"It provides framing, physical addressing and basic error control."},
+{title:"4. Network Layer",text:"It handles logical addressing and routing of packets."},
+{title:"5. Transport Layer",text:"It provides end-to-end delivery, reliability and flow control where required."},
+{title:"6. Session, Presentation and Application",text:"Session manages communication sessions; Presentation handles representation, encryption or compression; Application provides network services to user applications."},
+{title:"7. Conclusion",text:"The seven layers divide networking tasks into manageable functions."}
+],"7 Application\n6 Presentation\n5 Session\n4 Transport\n3 Network\n2 Data Link\n1 Physical","Memorize all seven layers in order."),
+
+makeQ("Explain cloud computing and its service models.","Cloud computing और service models समझाइए.",
+[
+{title:"1. Definition",text:"Cloud computing provides computing resources such as storage, processing and software over a network on demand."},
+{title:"2. IaaS",text:"Infrastructure as a Service provides virtualized infrastructure such as servers, storage and networking."},
+{title:"3. PaaS",text:"Platform as a Service provides a platform and tools for developing and deploying applications."},
+{title:"4. SaaS",text:"Software as a Service provides ready-to-use software over the internet."},
+{title:"5. Benefits",text:"Cloud can provide scalability, flexible resource use and reduced need for local infrastructure."},
+{title:"6. Examples of Use",text:"Used for storage, application hosting, development, backup and collaboration."},
+{title:"7. Conclusion",text:"IaaS, PaaS and SaaS represent different levels of managed cloud services."}
+],"Cloud\n├─ IaaS → Infrastructure\n├─ PaaS → Platform\n└─ SaaS → Software","Write all three models with examples."),
+
+makeQ("What is an Operating System? Explain its functions and types.","Operating System क्या है? इसके functions और types समझाइए.",
+[
+{title:"1. Definition",text:"An Operating System (OS) is system software that manages computer hardware and provides services for application programs."},
+{title:"2. Process Management",text:"The OS manages processes and allocates CPU time."},
+{title:"3. Memory Management",text:"It manages main memory and allocates memory to programs."},
+{title:"4. File Management",text:"It organizes, stores and controls access to files and directories."},
+{title:"5. Device and Security Management",text:"It manages input/output devices and provides access-control and protection mechanisms."},
+{title:"6. Types",text:"Common categories include batch, time-sharing, real-time, distributed and network operating systems."},
+{title:"7. Conclusion",text:"The OS acts as an interface between users/applications and computer hardware."}
+],"User / Applications\n        ↓\nOperating System\n        ↓\nHardware","Write at least five OS functions.")
+]);
+let currentSet = "";
+let currentSubjectCode = "";
+
+function showPage(id){
+
+    document.getElementById("homePage").classList.add("hidden");
+    document.getElementById("subjectPage").classList.add("hidden");
+    document.getElementById("questionPage").classList.add("hidden");
+
+    document.getElementById(id).classList.remove("hidden");
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+
+
+function goHome(){
+
+    currentSet = "";
+    currentSubjectCode = "";
+
+    showPage("homePage");
+}
+
+
+function openSet(set){
+
+    currentSet = set;
+
+    const list = document.getElementById("subjectList");
+
+    const filtered = subjects.filter(function(subject){
+        return subject.set === set;
+    });
+
+    document.getElementById("setTitle").textContent =
+        set === "A"
+        ? "📚 SET A — 1st Semester"
+        : "📖 SET B — 2nd Semester";
+
+    if(filtered.length === 0){
+        list.innerHTML =
+            "<p style='text-align:center;padding:30px;color:var(--muted)'>No subjects found.</p>";
+        showPage("subjectPage");
+        return;
+    }
+
+    list.innerHTML = filtered.map(function(subject){
+
+        return `
+        <button class="subject-card"
+            onclick="openSubject('${subject.code}')">
+
+            <div class="subject-icon">
+                ${subject.icon}
+            </div>
+
+            <div class="subject-info">
+
+                <div class="subject-code">
+                    ${subject.code}
+                </div>
+
+                <div class="subject-name">
+                    ${subject.name}
+                </div>
+
+                <div class="subject-count">
+                    ${subject.questions.length} Important Questions
+                </div>
 
             </div>
 
+            <div class="arrow">›</div>
+
+        </button>
         `;
 
-        questionBox.appendChild(card);
+    }).join("");
 
-    });
-
-    showPage("questions");
+    showPage("subjectPage");
 }
 
 
-/* =========================
-   SHOW / HIDE ANSWER
-========================= */
+function openSubject(code){
 
-function toggleAnswer(button) {
+    currentSubjectCode = code;
 
-    const answer = button.nextElementSibling;
+    const subject = subjects.find(function(item){
+        return item.code === code;
+    });
 
-    answer.classList.toggle("hidden");
+    if(!subject){
+        alert("Subject not found.");
+        return;
+    }
 
-    if (answer.classList.contains("hidden")) {
+    document.getElementById("subjectIcon").textContent =
+        subject.icon;
 
-        button.textContent = "👁 Show Answer";
+    document.getElementById("questionSubject").textContent =
+        subject.code + " — " + subject.name;
 
-    } else {
+
+    document.getElementById("questionList").innerHTML =
+        subject.questions.map(function(item,index){
+
+            return `
+            <div class="question-box">
+
+                <div class="question-number">
+                    QUESTION ${index + 1}
+                </div>
+
+                <div class="question-text">
+                    ${item.q}
+                </div>
+
+                <button
+                    class="answer-btn"
+                    onclick="toggleAnswer(${index})">
+
+                    👁️ Show Answer
+
+                </button>
+
+                <div
+                    class="answer-content"
+                    id="answer-${index}">
+
+                    ${item.sections.map(function(section){
+
+                        return `
+                        <div class="answer-section">
+
+                            <h4>
+                                ${section.title}
+                            </h4>
+
+                            <p>
+                                ${section.text}
+                            </p>
+
+                        </div>
+                        `;
+
+                    }).join("")}
+
+
+                    <div class="diagram-title">
+                        📌 Related Diagram
+                    </div>
+
+                    <pre class="diagram">${item.diagram}</pre>
+
+
+                    <div class="exam-point">
+
+                        <b>🎯 RGPV Exam Point:</b>
+                        ${item.exam}
+
+                    </div>
+
+                </div>
+
+            </div>
+            `;
+
+        }).join("");
+
+    showPage("questionPage");
+}
+
+
+function toggleAnswer(index){
+
+    const answer =
+        document.getElementById("answer-" + index);
+
+    if(!answer){
+        return;
+    }
+
+    const button =
+        answer.previousElementSibling;
+
+    answer.classList.toggle("show");
+
+    if(answer.classList.contains("show")){
 
         button.textContent = "🙈 Hide Answer";
 
-    }
+    }else{
 
+        button.textContent = "👁️ Show Answer";
+
+    }
 }
 
 
-/* =========================
-   BACK BUTTON
-========================= */
+function backToSubjects(){
 
-function goBackToSet() {
+    if(currentSet){
 
-    if (currentSet === "A") {
+        openSet(currentSet);
 
-        showPage("setA");
+    }else{
 
-    } else {
-
-        showPage("setB");
+        goHome();
 
     }
-
 }
 
 
-/* =========================
-   START WEBSITE
-========================= */
+function toggleTheme(){
 
-createSubjects("A", "setAList");
+    document.body.classList.toggle("light");
 
-createSubjects("B", "setBList");
+    const isLight =
+        document.body.classList.contains("light");
+
+    localStorage.setItem(
+        "rgpvTheme",
+        isLight ? "light" : "dark"
+    );
+
+    document.getElementById("themeBtn").textContent =
+        isLight ? "🌙 Dark" : "☀️ Light";
+}
+
+
+function loadTheme(){
+
+    const saved =
+        localStorage.getItem("rgpvTheme");
+
+    if(saved === "light"){
+
+        document.body.classList.add("light");
+
+    }
+
+    document.getElementById("themeBtn").textContent =
+        document.body.classList.contains("light")
+        ? "🌙 Dark"
+        : "☀️ Light";
+}
+
+
+loadTheme();
+
+showPage("homePage");
 
 </script>
 
 </body>
-  </html>
+</html>
