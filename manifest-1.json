@@ -1,0 +1,10 @@
+{
+  "name": "RGPV Most Important Questions",
+  "short_name": "RGPV Questions",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#2563eb",
+  "orientation": "portrait",
+  "icons": []
+}
