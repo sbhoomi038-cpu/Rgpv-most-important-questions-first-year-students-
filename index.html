@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="manifest" href="manifest.json">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,7 +27,13 @@
     --question:#55c2ff;
     --answer:#75e6a0;
 }
-
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("./service-worker.js");
+  });
+}
+</script>
 body{
     background:linear-gradient(135deg,#06101d,#0c1930,#10152d);
     color:var(--text);
